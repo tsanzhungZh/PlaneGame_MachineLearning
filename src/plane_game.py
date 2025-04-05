@@ -1,7 +1,7 @@
 import pygame
 import random
 import sys
-
+from event import *
 
 if __name__ == "__main__":
 
@@ -98,15 +98,16 @@ if __name__ == "__main__":
     font = pygame.font.Font(None, 36)
 
     # 游戏主循环
-    running = True
-    while running:
+    game_running = True
+    while game_running:
         # 保持循环以正确的速度运行
         clock.tick(60)
+
 
         # 处理输入事件
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
+                game_running = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     player.shoot()
