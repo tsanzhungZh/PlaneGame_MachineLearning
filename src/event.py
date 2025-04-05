@@ -120,7 +120,7 @@ class EventControler:
     def print_subscriber():
         """打印所有消息订阅者"""
         for key in EventControler.s_game_pubsub_dict:
-            v = EventControler.s_game_pubsub_dict.get(k)
+            v = EventControler.s_game_pubsub_dict.get(key)
             if None != v:
                 for cb in v:
                     print(cb)
@@ -134,6 +134,8 @@ class EventControler:
                     callback(*args, **kwargs)
                 except Exception as e:
                     print(f"回调执行失败: {e}")
+                if(EventControler.s_log_event_switch==True):
+                    pass
 
 
 
@@ -151,7 +153,7 @@ class EventControler:
 
     @staticmethod
     def event_game_send(ev)->bool:
-        """静态方法，游戏进行中向事件控制器发送的唯一事件接口,在其他模块调用"""
+        """静态方法，游戏进行中向本事件控制器发送的唯一事件接口,在其他模块调用"""
         EventControler.s_event_reception_queue.put(ev)
         return True
     @staticmethod
@@ -160,6 +162,10 @@ class EventControler:
         for event in pygame.event.get():
             ev = Event(event.type)
             ev.key = event.key
+            if(event.type == TYPE_KEYUP or event.type == TYPE_KEYDOWN):
+                ev.event_name = NAME_USER_INPUT
+            else:
+                ev.event_name = NAME_DEFAULT
             EventControler.s_event_reception_queue.put(ev)
 
     @staticmethod
@@ -174,9 +180,9 @@ class EventControler:
                 return
 
             if(ev.type == pygame.QUIT):
-                pass
-            elif((ev.type== pygame.KEYDOWN  or ev.type==pygame.KEYUP ) and EventControler.s_player_event_reception==True):
-                pass
+                EventControler.publish(QUIT)
+            elif(ev.event_name == NAME_USER_INPUT and EventControler.s_player_event_reception==True):
+                EventControler.publish(NAME_USER_INPUT)
             elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
                 pass
             elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
@@ -213,9 +219,15 @@ class EnvironmentEventControler:
 TYPE_ENEMY = 600000
 TYPE_ENVIRONMENT = 600001
 
-#costom-event-id
-ENEMY_ACT = 600128
-ENEMY_DEAD = 600129
+#costom-event_name
+NAME_DEFAULT = -1
+NAME_USER_INPUT = 0
+NAME_ENEMY_ACT = 600128
+NAME_ENEMY_DEAD = 600129
+
+
+
+
 
 #pygame-type
 TYPE_KEYDOWN = 768

@@ -9,12 +9,13 @@ from event import *
 class G_Engine:
 
     s_all_sprites_group = pygame.sprite.Group()
+    s_all_enemies_group = pygame.sprite.Group()
     s_running_status = base.GAME_STAUTS_RUNNING
 
     """pygame_setting"""
     s_screen_width = 800
     s_screen_height = 600
-
+    s_caption = "plane game"
 
     def __new__(cls):
         return None
@@ -26,10 +27,8 @@ class G_Engine:
     def run_():
 
         pygame.init()
-        screen_width = 800
-        screen_height = 600
-        screen = pygame.display.set_mode((screen_width, screen_height))
-        pygame.display.set_caption("太空射击")
+        screen = pygame.display.set_mode((G_Engine.s_screen_width, G_Engine.s_screen_height))
+        pygame.display.set_caption(G_Engine.s_caption)
         clock = pygame.time.Clock()
 
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
@@ -44,6 +43,7 @@ class G_Engine:
     """
     @staticmethod
     def init_event_cb():
+        """在这里添加所有的事件订阅回调,也可以在其他模块动态添加订阅"""
         EventControler.add_subscriber(QUIT,G_Engine.cb_game_close)
 
     @staticmethod
