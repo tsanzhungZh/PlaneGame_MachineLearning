@@ -1,30 +1,39 @@
 import pygame
 import random
 import sys
-
+from queue import Queue
 class Event:
     """"""
     # 类属性（所有实例共享）
     priority = 0xff
-    type = -1
-    key = -1
-    event_name = -1
+    type = -1 #好几种，除了600000和600001分别对应敌人和环境事件，其他都以pygame为准,只能在初始化时设置
+    key = -1 #输入事件时的按键值，非输入事件时默认-1,用户不可设置
+    event_name = -1 #自定义事件的事件名，具体序号查表
     #id
-    enemy_id = -1
-    player_id = -1
+    enemy_id = -1 #敌人发送事件时的id标识
+    player_id = -1#玩家id(多人游戏时可以加以区分)
 
     # 初始化方法（构造函数）
     def __init__(self,e_type,priority = 0xff):
+
         self.type = e_type  # 实例属性
+        self.key = -1
+
         self.priority = priority
-        self.id = 0
-        self.
+
+        self.event_name = -1
+        self.enemy_id = -1
+        self.player_id = -1
+
 
     def __del__(self):
         pass
-
-
-
+    def set_event_name(self,ev_name):
+        self.event_name = ev_name
+    def set_enemy_id(self,id):
+        self.enemy_id = id
+    def set_player_id(self,id):
+        self.player_id = id
 
 
 
@@ -54,10 +63,10 @@ class EventControler:
         pass
 
     @staticmethod
-    def Create():
-        s_player_event_controler = PlayerEventControler()
-        s_enemy_event_controler = EnemyEventControler()
-        s_environment_event_controler = EnvironmentEventControler()
+    def init_controler():
+        EventControler.s_player_event_controler = PlayerEventControler()
+        EventControler.s_enemy_event_controler = EnemyEventControler()
+        EventControler.s_environment_event_controler = EnvironmentEventControler()
 
     @staticmethod
     def init_pubsub(ps):
@@ -74,15 +83,19 @@ class EventControler:
     @staticmethod
     def event_create():
         pass
+
     @staticmethod
-    def event_user_input_get():
+    def event_game_send(ev)->bool:
+        """静态方法，游戏进行中内部向事件控制器发送的唯一事件接口"""
+        EventControler.s_event_reception_queue.append(ev)
+    @staticmethod
+    def event_sys_get():
+        """静态方法，唯一的获取sys事件的接口，同时包含系统和用户的输入事件"""
         for ev in pygame.event.get():
-            if ev.type == pygame.QUIT:
-                EventControler.s_game_running = False
-            elif ev.type == pygame.VIDEORESIZE:  # 窗口大小调整
-                print(f"新窗口大小: {ev.size}")
-            elif(ev.type == pygame.KEYDOWN or ev.type == pygame.KEYUP):
-                EventControler.event_quorum(ev)
+            e = Event(ev.type)
+            e.key = ev.key
+            EventControler.s_event_reception_queue.append(e)
+        
     @staticmethod
     def event_quorum(ev)->bool:
         if(EventControler.s_status!=1):
