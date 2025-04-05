@@ -1,7 +1,13 @@
+import queue
+
 import pygame
 import random
 import sys
 from queue import Queue
+
+#other constants
+MAX_EVENT_RECEPTION_NUMS = 1024
+
 class Event:
     """"""
     # 类属性（所有实例共享）
@@ -45,7 +51,7 @@ class EventControler:
     """0关闭 1空闲中 2处理中    """
     s_status = 1
     """moduler reception"""
-    s_event_reception_queue = []
+    s_event_reception_queue = Queue(maxsize=MAX_EVENT_RECEPTION_NUMS)
     s_player_event_reception = True
     s_enemy_event_reception = True
     s_environment_event_reception = True
@@ -58,8 +64,6 @@ class EventControler:
     """subpub"""
     s_game_pubsub_dict = None
     def __init__(self):
-        #self.s_log_event_hash.clear()
-        #self.s_status = 1
         pass
 
     @staticmethod
@@ -67,6 +71,12 @@ class EventControler:
         EventControler.s_player_event_controler = PlayerEventControler()
         EventControler.s_enemy_event_controler = EnemyEventControler()
         EventControler.s_environment_event_controler = EnvironmentEventControler()
+
+    @staticmethod
+    def init_event_reception():
+        """初始化事件队列"""
+        pass
+        #EventControler.s_event_reception_queue = Queue(maxsize=MAX_EVENT_RECEPTION_NUMS)
 
     @staticmethod
     def init_pubsub(ps):
@@ -86,32 +96,38 @@ class EventControler:
 
     @staticmethod
     def event_game_send(ev)->bool:
-        """静态方法，游戏进行中内部向事件控制器发送的唯一事件接口"""
-        EventControler.s_event_reception_queue.append(ev)
+        """静态方法，游戏进行中内部向事件控制器发送的唯一事件接口,在其他模块调用"""
+        EventControler.s_event_reception_queue.put(ev)
+        return True
     @staticmethod
     def event_sys_get():
         """静态方法，唯一的获取sys事件的接口，同时包含系统和用户的输入事件"""
-        for ev in pygame.event.get():
-            e = Event(ev.type)
-            e.key = ev.key
-            EventControler.s_event_reception_queue.append(e)
-        
+        for event in pygame.event.get():
+            ev = Event(event.type)
+            ev.key = event.key
+            EventControler.s_event_reception_queue.put(ev)
+
     @staticmethod
-    def event_quorum(ev)->bool:
+    def event_quorum()->bool:
         if(EventControler.s_status!=1):
             return False
 
-        if((ev.type== pygame.KEYDOWN  or ev.type==pygame.KEYUP ) and EventControler.s_player_event_reception==True):
-            """player"""
-            pass
-        elif(ev.type==1 and EventControler.s_enemy_event_reception==True):
-            """enemy"""
-            pass
-        elif(ev.type==2 and EventControler.s_environment_event_reception==True):
-            """environment"""
-            pass
-        else:
-            return False
+        for _ in range(EventControler.s_event_reception_queue.qsize()):
+            try:
+                ev = EventControler.s_event_reception_queue.get(block=False)  # 非阻塞
+            except queue.Empty:
+                return
+
+            if(ev.type == pygame.QUIT):
+                pass
+            elif((ev.type== pygame.KEYDOWN  or ev.type==pygame.KEYUP ) and EventControler.s_player_event_reception==True):
+                pass
+            elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
+                pass
+            elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
+                pass
+            else:
+                continue
 
         return True
 
@@ -402,3 +418,6 @@ WINDOWRESTORED = 32782
 WINDOWSHOWN = 32774
 WINDOWSIZECHANGED = 32779
 WINDOWTAKEFOCUS = 32788
+
+
+
