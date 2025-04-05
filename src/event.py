@@ -41,6 +41,22 @@ class Event:
     def set_player_id(self,id):
         self.player_id = id
 
+class PubSub:
+    """订阅器模块"""
+    def __init__(self):
+        self._subscribers = {}  # 事件名: [回调函数1, 回调函数2, ...]
+
+    def subscribe(self, event_name, callback):
+        """订阅事件"""
+        if event_name not in self._subscribers:
+            self._subscribers[event_name] = []
+        self._subscribers[event_name].append(callback)
+
+    def publish(self, event_name, *args, **kwargs):
+        """发布事件"""
+        if event_name in self._subscribers:
+            for callback in self._subscribers[event_name]:
+                callback(*args, **kwargs)
 
 
 class EventControler:
@@ -62,9 +78,20 @@ class EventControler:
     """game"""
     s_game_running = True
     """subpub"""
-    s_game_pubsub_dict = None
+    s_game_pubsub_dict = {}
+
+    def __new__(cls):
+        return None
+
     def __init__(self):
+        #banned
         pass
+
+    @staticmethod
+    def init():
+        EventControler.init_controler()
+        EventControler.init_event_reception()
+        EventControler.init_pubsub()
 
     @staticmethod
     def init_controler():
@@ -80,7 +107,35 @@ class EventControler:
 
     @staticmethod
     def init_pubsub(ps):
-        EventControler.s_game_pubsub_dict = ps
+        EventControler.s_game_pubsub_dict = {}
+
+    @staticmethod
+    def add_subscriber(event_name,callback):
+        """订阅事件控制器接收到的事件，外部调用此接口，并提供具体处理的回调"""
+        if event_name not in EventControler.s_game_pubsub_dict:
+            EventControler.s_game_pubsub_dict[event_name] = []
+        EventControler.s_game_pubsub_dict[event_name].append(callback)
+
+    @staticmethod
+    def print_subscriber():
+        """打印所有消息订阅者"""
+        for key in EventControler.s_game_pubsub_dict:
+            v = EventControler.s_game_pubsub_dict.get(k)
+            if None != v:
+                for cb in v:
+                    print(cb)
+
+    @staticmethod
+    def publish(event_name, *args, **kwargs):
+        """发布事件,callback注意首参数为Event类"""
+        if event_name in EventControler.s_game_pubsub_dict:
+            for callback in EventControler.s_game_pubsub_dict[event_name]:
+                try:
+                    callback(*args, **kwargs)
+                except Exception as e:
+                    print(f"回调执行失败: {e}")
+
+
 
     @staticmethod
     def log_open():
@@ -96,7 +151,7 @@ class EventControler:
 
     @staticmethod
     def event_game_send(ev)->bool:
-        """静态方法，游戏进行中内部向事件控制器发送的唯一事件接口,在其他模块调用"""
+        """静态方法，游戏进行中向事件控制器发送的唯一事件接口,在其他模块调用"""
         EventControler.s_event_reception_queue.put(ev)
         return True
     @staticmethod
@@ -134,7 +189,6 @@ class EventControler:
 
 class PlayerEventControler:
 
-    input_event_pool = []
 
 
     def __init__(self):

@@ -1,0 +1,11 @@
+# 颜色
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+
+
+
+#运行状态
+GAME_STAUTS_RUNNING = 1
+GAME_STATUS_OVER = 2
+GAME_STATUS_CLOSE = 3
