@@ -5,8 +5,8 @@ from datetime import datetime
 class Logger:
 
     LOG_LEVELS = {
-        'DEBUG': 0,
-        'INFO': 1,
+        'INFO': 0,
+        'DEBUG': 1,
         'WARNING': 2,
         'ERROR': 3,
         'CRITICAL': 4
@@ -20,7 +20,7 @@ class Logger:
         :param max_file_size: 最大文件大小（字节），超过将备份，默认1MB
         """
         self.log_file = log_file
-        self.log_level = self.LOG_LEVELS.get(log_level,1)
+        self.log_level = self.LOG_LEVELS.get(log_level,0)
         self.max_file_size = max_file_size
 
         # 初始化日志文件
@@ -59,9 +59,9 @@ class Logger:
         :param level: 日志级别
         :param show_console: 是否在控制台显示
         """
-        level_value = self.LOG_LEVELS.get(level, 1)  # 默认为INFO
+        level_value = self.LOG_LEVELS.get(level, 0)  # 默认为INFO
 
-        if level_value >= self.log_level:
+        if level_value == self.log_level:
             log_entry = f"[{self._get_timestamp()}] [{level}] {message}\n"
 
             # 写入文件

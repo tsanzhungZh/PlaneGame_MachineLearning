@@ -32,13 +32,18 @@ class G_Engine:
         font = pygame.font.Font(None, 36)
         score = 0
 
-        #costom
-        G_Engine.init_event_cb()
+        #costom - init moduler
         EventControler.init()
         EntityControler.init()
+
+        #costom - add callback
+        G_Engine.init_event_cb()
+
         #costom - add entity
         player = Player()
         EntityControler.add_new_player(player)
+
+
 
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
@@ -62,9 +67,8 @@ class G_Engine:
             # 刷新屏幕
             pygame.display.flip()
 
-
-        pass
-
+        pygame.quit()
+        sys.exit()
 
 
 
@@ -75,8 +79,10 @@ class G_Engine:
     def init_event_cb():
         """在这里添加所有的事件订阅回调,也可以在其他模块动态添加订阅"""
         EventControler.add_subscriber(QUIT,G_Engine.cb_game_close)
+        print(QUIT)
     @staticmethod
-    def cb_game_close(ev: Event):
+    def cb_game_close(ev: event.Event)->None:
+        print("close")
         if(ev.type == QUIT):
             G_Engine.s_running_status = base.GAME_STATUS_CLOSE
 

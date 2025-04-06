@@ -65,7 +65,7 @@ class EventControler:
     """key range used for event log """
     s_log_event_counter = 0
     s_log_event_switch = base.GAME_LOG_EVENT
-    s_event_logger = logger.Logger("event_log.txt")
+    s_event_logger = None
 
     """0关闭 1空闲中 2处理中    """
     s_status = 1
@@ -94,15 +94,19 @@ class EventControler:
         EventControler.event_quorum()
     @staticmethod
     def init():
-        EventControler.init_controler()
+        #EventControler.init_controler()
         EventControler.init_event_reception()
         EventControler.init_pubsub()
+        EventControler.init_log()
 
     @staticmethod
     def init_controler():
+        #banned
+        """
         EventControler.s_player_event_controler = PlayerEventControler()
         EventControler.s_enemy_event_controler = EnemyEventControler()
         EventControler.s_environment_event_controler = EnvironmentEventControler()
+        """
 
     @staticmethod
     def init_event_reception():
@@ -117,12 +121,10 @@ class EventControler:
     def init_log():
         if EventControler.s_log_event_switch == False:
             return
-        else:
-            EventControler.s_log_event_counter = 0
 
+        EventControler.s_log_event_counter = 0
+        EventControler.s_event_logger = logger.Logger("..//logs//event_log.txt",log_level=base.GAME_LOG_EVENT_LEVEL)
         """file IO"""
-
-
 
     @staticmethod
     def add_subscriber(event_name,callback):
@@ -130,6 +132,8 @@ class EventControler:
         if event_name not in EventControler.s_game_pubsub_dict:
             EventControler.s_game_pubsub_dict[event_name] = []
         EventControler.s_game_pubsub_dict[event_name].append(callback)
+        if (EventControler.s_log_event_switch == True):
+            EventControler.s_event_logger.log(f"|subcribe| {event_name}:{callback}",'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
 
     @staticmethod
     def print_subscriber():
@@ -151,8 +155,8 @@ class EventControler:
                     print(f"回调执行失败: {e}")
                 if(EventControler.s_log_event_switch==True):
                     pass
-
-
+        else:
+            print(f"ERROR:{event_name}NOT in DICT")
 
     @staticmethod
     def log_open():
@@ -191,6 +195,8 @@ class EventControler:
         ev.keys = pygame.key.get_pressed()
         EventControler.event_game_send(ev)
 
+
+
     @staticmethod
     def event_quorum()->bool:
         EventControler.event_sys_get()
@@ -200,14 +206,21 @@ class EventControler:
         for _ in range(EventControler.s_event_reception_queue.qsize()):
             try:
                 ev = EventControler.s_event_reception_queue.get(block=False)  # 非阻塞
-                print("try")
+                #add to log
+                if(EventControler.s_log_event_switch == True):
+                    EventControler.s_log_event_counter += 1
+                    if(ev.event_name!=1):
+                        msg = f"type={type_dict.get(ev.type,str(ev.type))},event_name={ev.event_name},player_id={ev.player_id},enemy_id={ev.enemy_id}"
+                        log_info = f"[{EventControler.s_log_event_counter}]:{msg}"
+                        EventControler.s_event_logger.log(log_info,show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+
             except queue.Empty:
                 print("except")
                 return
 
             if(ev.event_name == NAME_USER_CONTINUES_INPUT):
                 EventControler.publish(NAME_USER_CONTINUES_INPUT,ev)
-            if(ev.type == pygame.QUIT):
+            if(ev.type == QUIT):
                 EventControler.publish(QUIT,ev)
             elif(ev.event_name == NAME_USER_INPUT and EventControler.s_player_event_reception==True):
                 EventControler.publish(NAME_USER_INPUT,ev)
@@ -523,5 +536,46 @@ WINDOWSHOWN = 32774
 WINDOWSIZECHANGED = 32779
 WINDOWTAKEFOCUS = 32788
 
+type_dict = {
+    # 键盘事件
+    768: "KEYDOWN",  # pygame.KEYDOWN
+    769: "KEYUP",  # pygame.KEYUP
+    770: "TEXTEDITING",  # pygame.TEXTEDITING
+    771: "TEXTINPUT",  # pygame.TEXTINPUT
+    772: "KEYMAPCHANGED",  # pygame.KEYMAPCHANGED (Android/iOS专用)
 
+    # 鼠标事件
+    1024: "MOUSEMOTION",  # pygame.MOUSEMOTION
+    1025: "MOUSEBUTTONDOWN",  # pygame.MOUSEBUTTONDOWN
+    1026: "MOUSEBUTTONUP",  # pygame.MOUSEBUTTONUP
 
+    # 窗口事件
+    256: "QUIT",  # pygame.QUIT
+    257: "ACTIVEEVENT",  # pygame.ACTIVEEVENT
+    32768: "VIDEORESIZE",  # pygame.VIDEORESIZE
+    32769: "VIDEOEXPOSE",  # pygame.VIDEOEXPOSE
+    32770: "VIDEOMINIMIZE",  # pygame.VIDEOMINIMIZE (SDL2已弃用)
+    32771: "WINDOWENTER",  # pygame.WINDOWENTER
+    32772: "WINDOWLEAVE",  # pygame.WINDOWLEAVE
+    32773: "WINDOWFOCUSGAINED",  # pygame.WINDOWFOCUSGAINED
+    32774: "WINDOWFOCUSLOST",  # pygame.WINDOWFOCUSLOST
+    32775: "WINDOWCLOSE",  # pygame.WINDOWCLOSE (SDL2新增)
+
+    # 游戏控制器事件
+    1536: "JOYAXISMOTION",  # pygame.JOYAXISMOTION
+    1537: "JOYBALLMOTION",  # pygame.JOYBALLMOTION
+    1538: "JOYHATMOTION",  # pygame.JOYHATMOTION
+    1539: "JOYBUTTONDOWN",  # pygame.JOYBUTTONDOWN
+    1540: "JOYBUTTONUP",  # pygame.JOYBUTTONUP
+    1541: "JOYDEVICEADDED",  # pygame.JOYDEVICEADDED
+    1542: "JOYDEVICEREMOVED",  # pygame.JOYDEVICEREMOVED
+
+    # 触摸事件 (移动设备)
+    1792: "FINGERDOWN",  # pygame.FINGERDOWN
+    1793: "FINGERUP",  # pygame.FINGERUP
+    1794: "FINGERMOTION",  # pygame.FINGERMOTION
+
+    # 用户自定义事件 (1024-32767)
+    #1024: "USEREVENT",  # pygame.USEREVENT (基准值)
+    #16383: "NUMEVENTS"  # pygame.NUMEVENTS (最大值)
+}
