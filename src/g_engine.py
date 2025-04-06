@@ -34,13 +34,12 @@ class G_Engine:
 
         #costom
         G_Engine.init_event_cb()
-
         EventControler.init()
-
+        EntityControler.init()
+        #costom - add entity
         player = Player()
         EntityControler.add_new_player(player)
-        player.speed_y = 3
-        player.speed_x = 2
+
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
             clock.tick(60)

@@ -239,6 +239,11 @@ class EntityControler:
 
     def __new__(cls):
         return None
+
+    @staticmethod
+    def init():
+        pass
+
     @staticmethod
     def init_group():
         pass

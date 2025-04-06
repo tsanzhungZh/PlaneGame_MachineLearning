@@ -1,10 +1,10 @@
 import queue
-
+import logger
 import pygame
 import random
 import sys
 from queue import Queue
-
+import base
 #other constants
 MAX_EVENT_RECEPTION_NUMS = 1024
 
@@ -62,10 +62,11 @@ class PubSub:
 
 
 class EventControler:
-    """key range :(1,10000),used for event log """
+    """key range used for event log """
     s_log_event_counter = 0
-    s_log_event_hash = {}
-    s_log_event_switch = False
+    s_log_event_switch = base.GAME_LOG_EVENT
+    s_event_logger = logger.Logger("event_log.txt")
+
     """0关闭 1空闲中 2处理中    """
     s_status = 1
     """moduler reception"""
@@ -81,7 +82,6 @@ class EventControler:
     s_game_running = True
     """subpub"""
     s_game_pubsub_dict = {}
-
     def __new__(cls):
         return None
 
@@ -117,6 +117,9 @@ class EventControler:
     def init_log():
         if EventControler.s_log_event_switch == False:
             return
+        else:
+            EventControler.s_log_event_counter = 0
+
         """file IO"""
 
 
