@@ -24,7 +24,7 @@ class G_Engine:
     ========================= ENGINE  ==============================
     """
     @staticmethod
-    def run_():
+    def run():
 
         pygame.init()
         screen = pygame.display.set_mode((G_Engine.s_screen_width, G_Engine.s_screen_height))
@@ -55,15 +55,3 @@ class G_Engine:
 
 
 
-
-# 使用示例
-pubsub = PubSub()
-
-# 订阅者
-def on_message_received(message):
-    print(f"收到消息: {message}")
-
-pubsub.subscribe("message", on_message_received)
-
-# 发布者
-pubsub.publish("message", "Hello, PubSub!")  # 输出: 收到消息: Hello, PubSub!

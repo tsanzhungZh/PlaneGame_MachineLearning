@@ -20,17 +20,17 @@ class Event:
     player_id = -1#玩家id(多人游戏时可以加以区分)
 
     # 初始化方法（构造函数）
-    def __init__(self,e_type,priority = 0xff):
+    def __init__(self,type=-1,key=-1,event_name = -1,player_id = -1,enemy_id=-1,bullet_id=-1,priority = 0xff):
 
-        self.type = e_type  # 实例属性
-        self.key = -1
+        self.type = type  # 实例属性
+        self.key = key
 
         self.priority = priority
 
-        self.event_name = -1
-        self.enemy_id = -1
-        self.player_id = -1
-
+        self.event_name = event_name
+        self.enemy_id = enemy_id
+        self.player_id = player_id
+        self.bullet_id = bullet_id
 
     def __del__(self):
         pass
@@ -108,6 +108,13 @@ class EventControler:
     @staticmethod
     def init_pubsub(ps):
         EventControler.s_game_pubsub_dict = {}
+    @staticmethod
+    def init_log():
+        if EventControler.s_log_event_switch == False:
+            return
+        """file IO"""
+
+
 
     @staticmethod
     def add_subscriber(event_name,callback):
@@ -216,19 +223,28 @@ class EnvironmentEventControler:
 
 
 #costom-type
+"""自定义的TYPE类型，此TYPE类型和pygame公用一个event.type,因此不推荐，这里目前只添加了TYPE_ENEMY/TYPE_ENVIRONMENT用于区别玩家、敌人、环境的事件类型,
+非pygame特有的输入事件的时候，尽量不以该类型作为仲裁判断"""
 TYPE_ENEMY = 600000
 TYPE_ENVIRONMENT = 600001
 
 #costom-event_name
 NAME_DEFAULT = -1
 NAME_USER_INPUT = 0
-NAME_ENEMY_ACT = 600128
-NAME_ENEMY_DEAD = 600129
 
+NAME_PLAYER_MOVE = 600128
+NAME_PLAYER_SHOOT = 600129
 
+#costom - event_name - enemy
+NAME_ENEMY_ACT = 600512
+NAME_ENEMY_DEAD = 600513
 
+#costom - event_name - environment - collision
+NAME_ENVIRONMENT_COLLISION_P_E = 601024
+NAME_ENVIRONMENT_COLLISION_P_B = 601025
+NAME_ENVIRONMENT_COLLISION_B_E = 601026
 
-
+"""pygame给出的类型================================================================================================="""
 #pygame-type
 TYPE_KEYDOWN = 768
 TYPE_KEYMAPCHANGED = 772
