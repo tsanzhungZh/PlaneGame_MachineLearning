@@ -4,140 +4,81 @@ import sys
 from event import *
 
 if __name__ == "__main__":
-
-    # 初始化
     pygame.init()
-    screen_width = 800
-    screen_height = 600
-    screen = pygame.display.set_mode((screen_width, screen_height))
-    pygame.display.set_caption("太空射击")
+    screen = pygame.display.set_mode((800, 600))
     clock = pygame.time.Clock()
 
-    # 颜色
-    BLACK = (0, 0, 0)
-    WHITE = (255, 255, 255)
-    RED = (255, 0, 0)
 
-
-    # 玩家
-    class Player(pygame.sprite.Sprite):
-        def __init__(self):
-            super().__init__()
-            self.image = pygame.Surface((50, 40))
-            self.image.fill(WHITE)
-            self.rect = self.image.get_rect()
-            self.rect.centerx = screen_width // 2
-            self.rect.bottom = screen_height - 10
-            self.speed = 8
-
-        def update(self):
-            keys = pygame.key.get_pressed()
-            if keys[pygame.K_LEFT] and self.rect.left > 0:
-                self.rect.x -= self.speed
-            if keys[pygame.K_RIGHT] and self.rect.right < screen_width:
-                self.rect.x += self.speed
-
-        def shoot(self):
-            bullet = Bullet(self.rect.centerx, self.rect.top)
-            all_sprites.add(bullet)
-            bullets.add(bullet)
-
-
-    # 敌人
-    class Enemy(pygame.sprite.Sprite):
-        def __init__(self):
-            super().__init__()
-            self.image = pygame.Surface((30, 30))
-            self.image.fill(RED)
-            self.rect = self.image.get_rect()
-            self.rect.x = random.randrange(screen_width - self.rect.width)
-            self.rect.y = random.randrange(-100, -40)
-            self.speedy = random.randrange(1, 4)
-
-        def update(self):
-            self.rect.y += self.speedy
-            if self.rect.top > screen_height:
-                self.rect.x = random.randrange(screen_width - self.rect.width)
-                self.rect.y = random.randrange(-100, -40)
-                self.speedy = random.randrange(1, 4)
-
-
-    # 子弹
-    class Bullet(pygame.sprite.Sprite):
+    class Player:
         def __init__(self, x, y):
-            super().__init__()
-            self.image = pygame.Surface((5, 10))
-            self.image.fill(WHITE)
-            self.rect = self.image.get_rect()
-            self.rect.centerx = x
-            self.rect.bottom = y
-            self.speedy = -10
+            self.x = x
+            self.y = y
+            self.radius = 20
+            self.color = (0, 100, 255)
 
-        def update(self):
-            self.rect.y += self.speedy
-            if self.rect.bottom < 0:
-                self.kill()
+            # 运动参数
+            self.velocity_x = 0
+            self.velocity_y = 0
+            self.acceleration = 0.5  # 加速度
+            self.max_speed = 5  # 最大速度
+            self.friction = 0.95  # 摩擦系数(0-1)
+
+        def update(self, keys):
+            # 加速度计算
+            if keys[pygame.K_LEFT]:
+                self.velocity_x -= self.acceleration
+            if keys[pygame.K_RIGHT]:
+                self.velocity_x += self.acceleration
+            if keys[pygame.K_UP]:
+                self.velocity_y -= self.acceleration
+            if keys[pygame.K_DOWN]:
+                self.velocity_y += self.acceleration
+
+            # 限制最大速度
+            speed = (self.velocity_x ** 2 + self.velocity_y ** 2) ** 0.5
+            if speed > self.max_speed:
+                scale = self.max_speed / speed
+                self.velocity_x *= scale
+                self.velocity_y *= scale
+
+            # 应用摩擦力(逐渐减速)
+            self.velocity_x *= self.friction
+            self.velocity_y *= self.friction
+
+            # 如果速度很小，直接设为0
+            if abs(self.velocity_x) < 0.1: self.velocity_x = 0
+            if abs(self.velocity_y) < 0.1: self.velocity_y = 0
+
+            # 更新位置
+            self.x += self.velocity_x
+            self.y += self.velocity_y
+
+            # 边界检查
+            self.x = max(self.radius, min(self.x, 800 - self.radius))
+            self.y = max(self.radius, min(self.y, 600 - self.radius))
+
+        def draw(self, surface):
+            pygame.draw.circle(surface, self.color, (int(self.x), int(self.y)), self.radius)
 
 
-    # 创建精灵组
-    all_sprites = pygame.sprite.Group()
-    enemies = pygame.sprite.Group()
-    bullets = pygame.sprite.Group()
+    player = Player(400, 300)
 
-    player = Player()
-    all_sprites.add(player)
-
-    # 生成敌人
-    for i in range(8):
-        enemy = Enemy()
-        all_sprites.add(enemy)
-        enemies.add(enemy)
-
-    # 游戏变量
-    score = 0
-    font = pygame.font.Font(None, 36)
-
-    # 游戏主循环
-    game_running = True
-    while game_running:
-        # 保持循环以正确的速度运行
-        clock.tick(60)
-
-
-        # 处理输入事件
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                game_running = False
-            elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    player.shoot()
+                pygame.quit()
+                sys.exit()
 
-        # 更新
-        all_sprites.update()
+        keys = pygame.key.get_pressed()
+        player.update(keys)
 
-        # 检查子弹是否击中敌人
-        hits = pygame.sprite.groupcollide(bullets, enemies, True, True)
-        for hit in hits:
-            score += 1
-            enemy = Enemy()
-            all_sprites.add(enemy)
-            enemies.add(enemy)
+        screen.fill((0, 0, 0))
+        player.draw(screen)
 
-        # 检查敌人是否撞到玩家
-        hits = pygame.sprite.spritecollide(player, enemies, False)
-        if hits:
-            running = False
+        # 显示速度信息
+        font = pygame.font.SysFont(None, 24)
+        speed_text = font.render(f"速度: ({player.velocity_x:.1f}, {player.velocity_y:.1f})", True, (255, 255, 255))
+        screen.blit(speed_text, (10, 10))
 
-        # 渲染
-        screen.fill(BLACK)
-        all_sprites.draw(screen)
-
-        # 显示分数
-        score_text = font.render(f"得分: {score}", True, WHITE)
-        screen.blit(score_text, (10, 10))
-
-        # 刷新屏幕
         pygame.display.flip()
-
-    pygame.quit()
-    sys.exit()
+        clock.tick(60)

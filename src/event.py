@@ -25,6 +25,8 @@ class Event:
         self.type = type  # 实例属性
         self.key = key
 
+        self.keys = None
+
         self.priority = priority
 
         self.event_name = event_name
@@ -88,6 +90,9 @@ class EventControler:
         pass
 
     @staticmethod
+    def update():
+        EventControler.event_quorum()
+    @staticmethod
     def init():
         EventControler.init_controler()
         EventControler.init_event_reception()
@@ -106,7 +111,7 @@ class EventControler:
         #EventControler.s_event_reception_queue = Queue(maxsize=MAX_EVENT_RECEPTION_NUMS)
 
     @staticmethod
-    def init_pubsub(ps):
+    def init_pubsub():
         EventControler.s_game_pubsub_dict = {}
     @staticmethod
     def init_log():
@@ -166,30 +171,43 @@ class EventControler:
     @staticmethod
     def event_sys_get():
         """静态方法，唯一的获取sys事件的接口，同时包含系统和用户的输入事件"""
+
+        """input judge"""
         for event in pygame.event.get():
             ev = Event(event.type)
-            ev.key = event.key
             if(event.type == TYPE_KEYUP or event.type == TYPE_KEYDOWN):
+                ev.key = event.key
                 ev.event_name = NAME_USER_INPUT
             else:
                 ev.event_name = NAME_DEFAULT
-            EventControler.s_event_reception_queue.put(ev)
+            EventControler.event_game_send(ev)
+
+        """continues input judge"""
+        ev = Event()#将用户持续输入所检测封入事件池中
+        ev.set_event_name(NAME_USER_CONTINUES_INPUT)
+        ev.keys = pygame.key.get_pressed()
+        EventControler.event_game_send(ev)
 
     @staticmethod
     def event_quorum()->bool:
+        EventControler.event_sys_get()
         if(EventControler.s_status!=1):
             return False
 
         for _ in range(EventControler.s_event_reception_queue.qsize()):
             try:
                 ev = EventControler.s_event_reception_queue.get(block=False)  # 非阻塞
+                print("try")
             except queue.Empty:
+                print("except")
                 return
 
+            if(ev.event_name == NAME_USER_CONTINUES_INPUT):
+                EventControler.publish(NAME_USER_CONTINUES_INPUT,ev)
             if(ev.type == pygame.QUIT):
-                EventControler.publish(QUIT)
+                EventControler.publish(QUIT,ev)
             elif(ev.event_name == NAME_USER_INPUT and EventControler.s_player_event_reception==True):
-                EventControler.publish(NAME_USER_INPUT)
+                EventControler.publish(NAME_USER_INPUT,ev)
             elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
                 pass
             elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
@@ -231,6 +249,7 @@ TYPE_ENVIRONMENT = 600001
 #costom-event_name
 NAME_DEFAULT = -1
 NAME_USER_INPUT = 0
+NAME_USER_CONTINUES_INPUT = 1
 
 NAME_PLAYER_MOVE = 600128
 NAME_PLAYER_SHOOT = 600129
