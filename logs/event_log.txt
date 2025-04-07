@@ -3154,3 +3154,1437 @@
 [2025-04-06 22:26:46.301] [DEBUG] |subcribe| 256:<function G_Engine.cb_game_close at 0x000001BBFF088940>
 [2025-04-06 22:26:46.302] [DEBUG] |subcribe| 1:<bound method Player.cb_player_move of <Player Sprite(in 0 groups)>>
 [2025-04-06 22:26:46.302] [DEBUG] |subcribe| 1:<bound method Player.cb_player_shoot of <Player Sprite(in 0 groups)>>
+
+
+=== Log Started at 2025-04-07 15:53:25.842 ===
+=== Log Level: DEBUG ===
+
+[2025-04-07 15:53:25.842] [DEBUG] |subcribe| 256:<function G_Engine.cb_game_close at 0x0000021C56A7B940>
+[2025-04-07 15:53:25.842] [DEBUG] |subcribe| 1:<bound method Player.cb_player_move of <Player Sprite(in 0 groups)>>
+[2025-04-07 15:53:25.844] [DEBUG] |subcribe| 1:<bound method Player.cb_player_shoot of <Player Sprite(in 0 groups)>>
+
+
+=== Log Started at 2025-04-07 15:56:13.514 ===
+=== Log Level: DEBUG ===
+
+[2025-04-07 15:56:13.514] [DEBUG] |subcribe| 256:<function G_Engine.cb_game_close at 0x0000023CFF83C940>
+[2025-04-07 15:56:13.514] [DEBUG] |subcribe| 1:<bound method Player.cb_player_move of <Player Sprite(in 0 groups)>>
+[2025-04-07 15:56:13.514] [DEBUG] |subcribe| 1:<bound method Player.cb_player_shoot of <Player Sprite(in 0 groups)>>
+[2025-04-07 15:56:13.531] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.531] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.546] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.546] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.563] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.563] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.579] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.579] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.596] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.596] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.613] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.613] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.629] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.629] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.646] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.646] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.663] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.663] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.679] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.679] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.695] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.695] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.712] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.712] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.728] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.728] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.744] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.744] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.760] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.760] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.777] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.777] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.794] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.794] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.810] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.810] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.827] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.827] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.844] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.844] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.860] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.860] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.876] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.876] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.894] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.894] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.910] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.910] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.927] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.927] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.944] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.944] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.960] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.960] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.977] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.977] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.993] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:13.994] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.010] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.011] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.027] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.027] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.043] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.044] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.061] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.061] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.076] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.076] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.092] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.092] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.108] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.108] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.125] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.125] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.142] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.142] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.158] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.158] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.176] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.176] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.193] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.193] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.209] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.209] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.225] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.225] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.242] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.242] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.258] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.258] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.274] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.274] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.290] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.290] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.306] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.306] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.323] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.324] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.339] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.339] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.357] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.357] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.374] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.374] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.390] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.390] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.406] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.406] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.423] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.423] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.439] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.439] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.455] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.455] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.471] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.471] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.487] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.487] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.503] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.503] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.520] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.520] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.537] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.537] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.553] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.553] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.570] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.570] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.586] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.586] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.602] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.602] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.618] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.618] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.635] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.635] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.651] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.651] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.668] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.668] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.683] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.683] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.700] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.700] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.716] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.716] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.732] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.732] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.749] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.749] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.765] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.766] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.781] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.782] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.798] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.798] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.816] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.816] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.831] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.831] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.849] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.850] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.865] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.865] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.882] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.882] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.898] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.898] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.915] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.915] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.932] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.932] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.948] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.948] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.965] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.965] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.981] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.981] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.997] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:14.997] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.015] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.015] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.031] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.031] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.047] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.047] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.064] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.064] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.080] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.080] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.096] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.096] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.112] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.112] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.128] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.128] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.146] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.146] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.163] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.163] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.179] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.179] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.195] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.195] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.212] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.212] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.227] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.227] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.245] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.245] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.261] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.261] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.277] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.277] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.293] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.293] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.309] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.309] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.326] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.326] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.342] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.342] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.359] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.359] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.375] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.375] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.392] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.392] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.408] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.408] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.426] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.426] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.443] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.443] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.460] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.460] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.476] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.476] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.494] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.494] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.510] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.510] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.526] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.526] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.544] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.544] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.560] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.560] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.576] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.576] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.593] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.593] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.609] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.609] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.625] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.625] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.641] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.641] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.657] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.657] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.673] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.673] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.689] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.689] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.707] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.707] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.724] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.724] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.740] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.740] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.756] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.756] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.773] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.773] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.788] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.788] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.805] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.805] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.822] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.822] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.838] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.838] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.854] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.854] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.871] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.871] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.888] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:15.889] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.889] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.903] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.903] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.920] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.921] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.936] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.936] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.952] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.952] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.968] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.969] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.985] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:15.985] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.001] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.001] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.017] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.018] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.034] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.034] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.050] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.050] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.067] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.067] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.082] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.082] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.099] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.099] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.115] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.115] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.132] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:16.133] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.133] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.148] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.149] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.164] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.164] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.180] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.180] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.197] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.197] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.213] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.213] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.229] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.229] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.245] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.246] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.261] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.261] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.277] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.277] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.293] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.293] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.309] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.309] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.326] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.326] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.342] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.342] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.358] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.358] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.375] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.375] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.391] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.391] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.408] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.408] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.425] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.426] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.442] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.442] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.459] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.459] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.476] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.476] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.493] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.494] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.509] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.509] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.525] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.525] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.542] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.543] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.557] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.557] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.574] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.574] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.590] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.591] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.607] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.607] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.621] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.622] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.639] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.639] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.654] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.655] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.670] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.671] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.687] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.687] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.702] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.703] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.719] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:16.720] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.720] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.735] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.735] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.751] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.752] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.769] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.769] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.785] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.786] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.802] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.802] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.818] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.818] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.835] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.835] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.851] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.851] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.867] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.868] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.884] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.885] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.900] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.901] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.917] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.918] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.932] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.932] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.949] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.949] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.965] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.966] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.982] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.982] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:16.999] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.000] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.015] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.015] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.031] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.031] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.047] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.047] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.063] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.064] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.079] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.080] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.095] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.096] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.112] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.112] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.128] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.128] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.144] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:17.145] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.145] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.161] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:17.162] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.162] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.177] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:17.178] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.178] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.192] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.192] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.209] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.209] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.225] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.226] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.241] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.242] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.257] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.258] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.273] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.273] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.290] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:17.290] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.290] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.305] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.305] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.321] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.321] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.337] [DEBUG] |publish| 0:not in dict
+[2025-04-07 15:56:17.338] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.338] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.354] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.355] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.370] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.370] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.387] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.387] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.403] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.403] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.419] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.419] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.435] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.435] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.452] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.452] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.468] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.468] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.485] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.486] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.589] [DEBUG] |publish| 256:pub <function G_Engine.cb_game_close at 0x0000023CFF83C940>
+[2025-04-07 15:56:17.589] [DEBUG] |publish| 1:pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:56:17.590] [DEBUG] |publish| 1:pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+
+
+=== Log Started at 2025-04-07 15:58:32.738 ===
+=== Log Level: DEBUG ===
+
+[2025-04-07 15:58:32.738] [DEBUG] |subcribe| 256:<function G_Engine.cb_game_close at 0x000002745D5BB940>
+[2025-04-07 15:58:32.738] [DEBUG] |subcribe| 1:<bound method Player.cb_player_move of <Player Sprite(in 0 groups)>>
+[2025-04-07 15:58:32.738] [DEBUG] |subcribe| 1:<bound method Player.cb_player_shoot of <Player Sprite(in 0 groups)>>
+[2025-04-07 15:58:32.755] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.755] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.770] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.770] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.786] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.786] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.803] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.803] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.820] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.820] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.837] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.837] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.854] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.854] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.870] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.870] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.886] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.886] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.903] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.903] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.920] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.920] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.936] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.937] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.952] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.952] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.968] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.968] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.985] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:32.985] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.002] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.002] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.018] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.018] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.035] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.035] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.051] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.051] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.067] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.067] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.085] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.085] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.102] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.102] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.118] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.118] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.134] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.134] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.151] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.151] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.167] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.167] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.184] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.184] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.201] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.201] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.217] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.217] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.234] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.234] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.251] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.252] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.267] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.267] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.284] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.284] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.300] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.300] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.316] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.316] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.332] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.332] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.349] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.349] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.366] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.366] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.383] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.383] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.399] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.399] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.415] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.415] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.431] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.431] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.447] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.447] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.464] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.464] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.479] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.479] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.497] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.497] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.513] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.513] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.529] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.529] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.545] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.545] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.562] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.562] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.579] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.579] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.596] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.596] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.614] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.614] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.630] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.630] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.647] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.647] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.664] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.664] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.680] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.680] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.696] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.696] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.712] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.712] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.729] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.729] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.745] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.745] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.760] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.761] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.777] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.777] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.793] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.794] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.809] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.809] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.827] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.827] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.843] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.843] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.859] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.859] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.876] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.876] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.892] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.892] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.908] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.908] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.925] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.925] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.941] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.941] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.958] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.958] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.974] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.975] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.990] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:33.990] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.007] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.008] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.023] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.024] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.040] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.040] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.056] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.057] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.073] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.073] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.090] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.090] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.106] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.106] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.124] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.124] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.141] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.141] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.157] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.157] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.174] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.174] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.191] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.191] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.207] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.208] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.224] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.224] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.241] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.241] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.257] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.257] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.273] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.273] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.289] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.289] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.305] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.305] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.321] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.321] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.337] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.337] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.353] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.354] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.369] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.369] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.385] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.385] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.401] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.401] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.417] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.417] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.433] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.433] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.449] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.449] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.465] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.465] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.481] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.481] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.498] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.498] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.515] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.515] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.531] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.531] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.547] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.547] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.564] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.565] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.581] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.581] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.597] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.597] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.613] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.613] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.630] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.631] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.647] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.648] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.664] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.665] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.680] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.681] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.697] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.698] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.714] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.715] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.730] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.730] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.746] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.746] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.763] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.763] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.779] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.779] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.796] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.796] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.813] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.813] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.829] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.829] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.846] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.846] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.863] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.864] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.879] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.879] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.895] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.895] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.910] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.910] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.928] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.928] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.945] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.945] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.961] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.961] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.978] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.978] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.994] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:34.994] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.011] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.011] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.027] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.027] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.042] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.044] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.060] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.061] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.076] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.077] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.092] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.092] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.109] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:35.109] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.109] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.124] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.124] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.140] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.140] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.156] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.156] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.173] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.173] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.190] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.190] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.207] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.207] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.223] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.224] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.240] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.241] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.257] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.258] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.274] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.275] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.292] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:35.293] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.293] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.307] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.307] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.323] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.323] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.341] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.342] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.357] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.357] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.375] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.375] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.391] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.392] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.408] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.408] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.424] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.424] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.441] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.442] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.457] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.457] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.474] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.475] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.490] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.491] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.508] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.508] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.522] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.522] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.538] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.539] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.555] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.556] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.572] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.572] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.588] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.589] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.606] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:35.606] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.606] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.621] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.622] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.637] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.637] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.654] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.654] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.670] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.670] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.686] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.686] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.701] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.703] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.719] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.719] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.735] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.735] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.750] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.751] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.767] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.767] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.783] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.784] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.799] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.800] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.815] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.816] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.831] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.831] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.847] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.848] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.864] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.865] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.880] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.881] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.897] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.898] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.913] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.914] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.929] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.930] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.945] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.946] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.961] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.962] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.978] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.979] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.995] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:35.995] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:35.995] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.010] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.010] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.026] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.026] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.045] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.046] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.046] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.059] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.059] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.077] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.077] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.078] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.094] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.094] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.110] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.110] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.126] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.126] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.142] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.142] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.159] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.159] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.177] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.177] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.194] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.194] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.195] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.210] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.210] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.227] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.227] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.244] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.245] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.259] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.259] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.277] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.277] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.294] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.294] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.309] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.309] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.326] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.326] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.344] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.344] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.360] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.360] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.376] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.376] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.392] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.392] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.392] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.410] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.410] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.426] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.426] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.426] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.443] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.443] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.459] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.459] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.476] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.476] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.493] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.494] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.494] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.509] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.509] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.525] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.526] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.526] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.541] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.541] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.558] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.558] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.574] [DEBUG] |publish| event_name=0:not in dict
+[2025-04-07 15:58:36.575] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.575] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.591] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.591] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.607] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.607] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.623] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.624] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.639] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.639] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.655] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.655] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.671] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.672] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.688] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.688] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.705] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.705] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.721] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.721] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.804] [DEBUG] |publish| event_name=256pub <function G_Engine.cb_game_close at 0x000002745D5BB940>
+[2025-04-07 15:58:36.804] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_move of <Player Sprite(in 2 groups)>>
+[2025-04-07 15:58:36.804] [DEBUG] |publish| event_name=1pub <bound method Player.cb_player_shoot of <Player Sprite(in 2 groups)>>
+
+
+=== Log Started at 2025-04-07 15:59:28.949 ===
+=== Log Level: INFO ===
+
+[2025-04-07 15:59:28.967] [INFO] [1]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [2]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [3]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [4]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [5]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [6]:type=WINDOWFOCUSLOST,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [7]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [8]:type=32785,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.968] [INFO] [9]:type=TEXTEDITING,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.969] [INFO] [10]:type=VIDEOMINIMIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:28.969] [INFO] [11]:type=32776,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.161] [INFO] [24]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.161] [INFO] [25]:type=32783,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.161] [INFO] [26]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.177] [INFO] [28]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.193] [INFO] [30]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.210] [INFO] [32]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.227] [INFO] [34]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.244] [INFO] [36]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.260] [INFO] [38]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.276] [INFO] [40]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.292] [INFO] [42]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.309] [INFO] [44]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.326] [INFO] [46]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.342] [INFO] [48]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.359] [INFO] [50]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.376] [INFO] [52]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.393] [INFO] [54]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.410] [INFO] [56]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.427] [INFO] [58]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.443] [INFO] [60]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.459] [INFO] [62]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.476] [INFO] [64]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.492] [INFO] [66]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.508] [INFO] [68]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.524] [INFO] [70]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.540] [INFO] [72]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.574] [INFO] [75]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.591] [INFO] [77]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.608] [INFO] [79]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.624] [INFO] [81]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.640] [INFO] [83]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.656] [INFO] [85]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.704] [INFO] [89]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.720] [INFO] [91]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.736] [INFO] [93]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.752] [INFO] [95]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.768] [INFO] [97]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.784] [INFO] [99]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.800] [INFO] [101]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.817] [INFO] [103]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.931] [INFO] [111]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.947] [INFO] [113]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.947] [INFO] [114]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.963] [INFO] [116]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.980] [INFO] [118]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:29.996] [INFO] [120]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.012] [INFO] [122]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.029] [INFO] [124]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.046] [INFO] [126]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.144] [INFO] [133]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.160] [INFO] [135]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.225] [INFO] [140]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.241] [INFO] [142]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.258] [INFO] [144]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.274] [INFO] [146]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.291] [INFO] [148]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.308] [INFO] [150]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.324] [INFO] [152]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.341] [INFO] [154]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.357] [INFO] [156]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.585] [INFO] [171]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.601] [INFO] [173]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.635] [INFO] [176]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.636] [INFO] [177]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.636] [INFO] [178]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.734] [INFO] [185]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.750] [INFO] [187]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.767] [INFO] [189]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.784] [INFO] [191]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.784] [INFO] [192]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.784] [INFO] [193]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.799] [INFO] [195]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.816] [INFO] [197]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.833] [INFO] [199]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.849] [INFO] [201]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.867] [INFO] [203]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.884] [INFO] [205]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.885] [INFO] [206]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.886] [INFO] [207]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.900] [INFO] [209]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.917] [INFO] [211]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.933] [INFO] [213]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.949] [INFO] [215]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.965] [INFO] [217]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.981] [INFO] [219]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:30.997] [INFO] [221]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.014] [INFO] [223]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.030] [INFO] [225]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.045] [INFO] [227]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.062] [INFO] [229]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.062] [INFO] [230]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.062] [INFO] [231]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.077] [INFO] [233]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.094] [INFO] [235]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.094] [INFO] [236]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.111] [INFO] [238]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.128] [INFO] [240]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.145] [INFO] [242]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.163] [INFO] [244]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.164] [INFO] [245]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.164] [INFO] [246]:type=32784,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.164] [INFO] [247]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.420] [INFO] [260]:type=32787,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 15:59:31.421] [INFO] [261]:type=QUIT,event_name=-1,player_id=-1,enemy_id=-1
+
+
+=== Log Started at 2025-04-07 16:05:23.015 ===
+=== Log Level: INFO ===
+
+[2025-04-07 16:05:23.033] [INFO] [1]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.033] [INFO] [2]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.033] [INFO] [3]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.033] [INFO] [4]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.033] [INFO] [5]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [6]:type=WINDOWFOCUSLOST,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [7]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [8]:type=32785,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [9]:type=TEXTEDITING,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [10]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [11]:type=32783,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [12]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [13]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [14]:type=VIDEOMINIMIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.034] [INFO] [15]:type=32776,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.050] [INFO] [17]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.066] [INFO] [19]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.083] [INFO] [21]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.100] [INFO] [23]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.116] [INFO] [25]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.132] [INFO] [27]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.266] [INFO] [36]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.282] [INFO] [38]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.299] [INFO] [40]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.315] [INFO] [42]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.333] [INFO] [44]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.349] [INFO] [46]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.365] [INFO] [48]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.382] [INFO] [50]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.398] [INFO] [52]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.415] [INFO] [54]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.432] [INFO] [56]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.449] [INFO] [58]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.466] [INFO] [60]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.483] [INFO] [62]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.499] [INFO] [64]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.516] [INFO] [66]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.517] [INFO] [67]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.517] [INFO] [68]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.517] [INFO] [69]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.533] [INFO] [71]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.549] [INFO] [73]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.566] [INFO] [75]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.779] [INFO] [89]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.795] [INFO] [91]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.812] [INFO] [93]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.861] [INFO] [97]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.861] [INFO] [98]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.862] [INFO] [99]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.876] [INFO] [101]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.893] [INFO] [103]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.909] [INFO] [105]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.925] [INFO] [107]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.942] [INFO] [109]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.958] [INFO] [111]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.976] [INFO] [113]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:23.992] [INFO] [115]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.008] [INFO] [117]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.026] [INFO] [119]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.041] [INFO] [121]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.058] [INFO] [123]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.074] [INFO] [125]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.091] [INFO] [127]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.107] [INFO] [129]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.123] [INFO] [131]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.140] [INFO] [133]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.157] [INFO] [135]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.174] [INFO] [137]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.190] [INFO] [139]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.207] [INFO] [141]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.224] [INFO] [143]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.240] [INFO] [145]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.256] [INFO] [147]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.289] [INFO] [150]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.306] [INFO] [152]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.322] [INFO] [154]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.339] [INFO] [156]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.355] [INFO] [158]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.373] [INFO] [160]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.406] [INFO] [163]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.423] [INFO] [165]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.456] [INFO] [168]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.490] [INFO] [171]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.491] [INFO] [172]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.507] [INFO] [174]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.507] [INFO] [175]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.523] [INFO] [177]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.523] [INFO] [178]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.524] [INFO] [179]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.540] [INFO] [181]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.557] [INFO] [183]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.557] [INFO] [184]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.573] [INFO] [186]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.590] [INFO] [188]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.606] [INFO] [190]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.622] [INFO] [192]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.639] [INFO] [194]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.655] [INFO] [196]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.672] [INFO] [198]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.689] [INFO] [200]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.705] [INFO] [202]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.723] [INFO] [204]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.740] [INFO] [206]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.756] [INFO] [208]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.773] [INFO] [210]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.789] [INFO] [212]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.805] [INFO] [214]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.822] [INFO] [216]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.839] [INFO] [218]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.856] [INFO] [220]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.873] [INFO] [222]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.889] [INFO] [224]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.906] [INFO] [226]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.923] [INFO] [228]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.923] [INFO] [229]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.924] [INFO] [230]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.924] [INFO] [231]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.939] [INFO] [233]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:24.939] [INFO] [234]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.088] [INFO] [244]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.105] [INFO] [246]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.121] [INFO] [248]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.137] [INFO] [250]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.154] [INFO] [252]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.171] [INFO] [254]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.186] [INFO] [256]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.203] [INFO] [258]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.220] [INFO] [260]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.220] [INFO] [261]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.221] [INFO] [262]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.221] [INFO] [263]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.252] [INFO] [266]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.270] [INFO] [268]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.286] [INFO] [270]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.303] [INFO] [272]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.319] [INFO] [274]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.319] [INFO] [275]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.320] [INFO] [276]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.320] [INFO] [277]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.320] [INFO] [278]:type=32784,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.552] [INFO] [293]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.552] [INFO] [294]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.636] [INFO] [300]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.846] [INFO] [314]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.846] [INFO] [315]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.896] [INFO] [319]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.929] [INFO] [322]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:25.930] [INFO] [323]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.043] [INFO] [331]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.189] [INFO] [341]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.190] [INFO] [342]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.254] [INFO] [347]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.335] [INFO] [353]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.335] [INFO] [354]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.599] [INFO] [371]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.867] [INFO] [388]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.915] [INFO] [392]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.915] [INFO] [393]:type=32783,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.915] [INFO] [394]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.932] [INFO] [396]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.948] [INFO] [398]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.965] [INFO] [400]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.981] [INFO] [402]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:26.997] [INFO] [404]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.013] [INFO] [406]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.030] [INFO] [408]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.046] [INFO] [410]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.063] [INFO] [412]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.214] [INFO] [422]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.214] [INFO] [423]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.247] [INFO] [426]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.280] [INFO] [429]:type=MOUSEBUTTONDOWN,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.363] [INFO] [435]:type=MOUSEBUTTONUP,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.396] [INFO] [438]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.413] [INFO] [440]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.430] [INFO] [442]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.446] [INFO] [444]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.463] [INFO] [446]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.480] [INFO] [448]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.496] [INFO] [450]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.516] [INFO] [452]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.516] [INFO] [453]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.516] [INFO] [454]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.516] [INFO] [455]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.516] [INFO] [456]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.529] [INFO] [458]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.548] [INFO] [460]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.549] [INFO] [461]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.549] [INFO] [462]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.549] [INFO] [463]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.562] [INFO] [465]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.578] [INFO] [467]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.594] [INFO] [469]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.610] [INFO] [471]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.693] [INFO] [477]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.694] [INFO] [478]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.710] [INFO] [480]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.774] [INFO] [485]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.806] [INFO] [488]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.823] [INFO] [490]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.839] [INFO] [492]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.855] [INFO] [494]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.872] [INFO] [496]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.887] [INFO] [498]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.905] [INFO] [500]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.922] [INFO] [502]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:27.936] [INFO] [504]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.035] [INFO] [511]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.052] [INFO] [513]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.068] [INFO] [515]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.085] [INFO] [517]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.086] [INFO] [518]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.087] [INFO] [519]:type=32784,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.166] [INFO] [525]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.167] [INFO] [526]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.231] [INFO] [531]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.232] [INFO] [532]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.363] [INFO] [541]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.511] [INFO] [551]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.745] [INFO] [566]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.745] [INFO] [567]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:28.940] [INFO] [580]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.110] [INFO] [591]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.110] [INFO] [592]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.611] [INFO] [623]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.645] [INFO] [626]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.678] [INFO] [629]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.694] [INFO] [631]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.695] [INFO] [632]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.846] [INFO] [642]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.846] [INFO] [643]:type=32783,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.847] [INFO] [644]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.861] [INFO] [646]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.924] [INFO] [651]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:29.924] [INFO] [652]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.254] [INFO] [673]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.271] [INFO] [675]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.272] [INFO] [676]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.272] [INFO] [677]:type=32784,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.547] [INFO] [695]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.547] [INFO] [696]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.548] [INFO] [697]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.548] [INFO] [698]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.763] [INFO] [712]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.778] [INFO] [714]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.909] [INFO] [723]:type=KEYDOWN,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:30.911] [INFO] [724]:type=TEXTINPUT,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:31.089] [INFO] [736]:type=KEYUP,event_name=0,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:31.581] [INFO] [766]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:31.583] [INFO] [767]:type=32786,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:31.583] [INFO] [768]:type=TEXTEDITING,event_name=-1,player_id=-1,enemy_id=-1
+
+
+=== Log Started at 2025-04-07 16:05:55.189 ===
+=== Log Level: INFO ===
+
+[2025-04-07 16:05:55.207] [INFO] [1]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.207] [INFO] [2]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.207] [INFO] [3]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.207] [INFO] [4]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.207] [INFO] [5]:type=4352,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [6]:type=WINDOWFOCUSLOST,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [7]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [8]:type=32785,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [9]:type=TEXTEDITING,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [10]:type=VIDEOMINIMIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.208] [INFO] [11]:type=32776,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.687] [INFO] [41]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.687] [INFO] [42]:type=32783,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.687] [INFO] [43]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.704] [INFO] [45]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.720] [INFO] [47]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.736] [INFO] [49]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.752] [INFO] [51]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.768] [INFO] [53]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.784] [INFO] [55]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.800] [INFO] [57]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.817] [INFO] [59]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.950] [INFO] [68]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.967] [INFO] [70]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.982] [INFO] [72]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:55.998] [INFO] [74]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.016] [INFO] [76]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.033] [INFO] [78]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.050] [INFO] [80]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.067] [INFO] [82]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.084] [INFO] [84]:type=MOUSEMOTION,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.085] [INFO] [85]:type=VIDEORESIZE,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.085] [INFO] [86]:type=32784,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.268] [INFO] [93]:type=32787,event_name=-1,player_id=-1,enemy_id=-1
+[2025-04-07 16:05:56.268] [INFO] [94]:type=QUIT,event_name=-1,player_id=-1,enemy_id=-1

@@ -95,12 +95,12 @@ class EventControler:
     @staticmethod
     def init():
         #EventControler.init_controler()
-        EventControler.init_event_reception()
-        EventControler.init_pubsub()
-        EventControler.init_log()
+        EventControler._init_event_reception()
+        EventControler._init_pubsub()
+        EventControler._init_log()
 
     @staticmethod
-    def init_controler():
+    def _init_controler():
         #banned
         """
         EventControler.s_player_event_controler = PlayerEventControler()
@@ -109,16 +109,16 @@ class EventControler:
         """
 
     @staticmethod
-    def init_event_reception():
+    def _init_event_reception():
         """初始化事件队列"""
         pass
         #EventControler.s_event_reception_queue = Queue(maxsize=MAX_EVENT_RECEPTION_NUMS)
 
     @staticmethod
-    def init_pubsub():
+    def _init_pubsub():
         EventControler.s_game_pubsub_dict = {}
     @staticmethod
-    def init_log():
+    def _init_log():
         if EventControler.s_log_event_switch == False:
             return
 
@@ -153,10 +153,13 @@ class EventControler:
                     callback(*args, **kwargs)
                 except Exception as e:
                     print(f"回调执行失败: {e}")
-                if(EventControler.s_log_event_switch==True):
-                    pass
+                if (EventControler.s_log_event_switch == True):
+                    EventControler.s_event_logger.log(f"|publish| event_name={event_name} pub {callback}", 'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
         else:
-            print(f"ERROR:{event_name}NOT in DICT")
+            if (EventControler.s_log_event_switch == True):
+                EventControler.s_event_logger.log(f"|publish| event_name={event_name}:callback func not in dict",'WARNING',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+
+
 
     @staticmethod
     def log_open():
@@ -171,7 +174,7 @@ class EventControler:
         pass
 
     @staticmethod
-    def event_game_send(ev)->bool:
+    def send_event(ev)->bool:
         """静态方法，游戏进行中向本事件控制器发送的唯一事件接口,在其他模块调用"""
         EventControler.s_event_reception_queue.put(ev)
         return True
@@ -187,13 +190,13 @@ class EventControler:
                 ev.event_name = NAME_USER_INPUT
             else:
                 ev.event_name = NAME_DEFAULT
-            EventControler.event_game_send(ev)
+            EventControler.send_event(ev)
 
         """continues input judge"""
         ev = Event()#将用户持续输入所检测封入事件池中
         ev.set_event_name(NAME_USER_CONTINUES_INPUT)
         ev.keys = pygame.key.get_pressed()
-        EventControler.event_game_send(ev)
+        EventControler.send_event(ev)
 
 
 

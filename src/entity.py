@@ -83,7 +83,7 @@ class Player(pygame.sprite.Sprite):
         """发送一个玩家射击的事件"""
         ev = event.Event()
         ev.set_event_name(event.NAME_PLAYER_SHOOT)
-        event.EventControler.event_game_send(ev)
+        event.EventControler.send_event(ev)
 
     def calculate_pos2(self):
 
@@ -271,12 +271,12 @@ class EntityControler:
         player_collisions = pygame.sprite.groupcollide(EntityControler.g_playerGroup,EntityControler.g_enemyGroup,False,False)
         for player,enemies in player_collisions:
             ev = event.Event(player_id=player.id,type=event.TYPE_ENVIRONMENT,event_name=event.NAME_ENVIRONMENT_COLLISION_P_E)
-            event.EventControler.event_game_send(ev)
+            event.EventControler.send_event(ev)
 
         """enemy collisions judgement (with bullet)"""
         enemy_collisions = pygame.sprite.groupcollide(EntityControler.g_bulletGroup,EntityControler.g_enemyGroup,False,False)
         for bullet,enemies in enemy_collisions:
             for enemy in enemies:
                 ev = event.Event(enemy_id=enemy.id,bullet_id=bullet.id,type=event.TYPE_ENVIRONMENT,event_name=event.NAME_ENVIRONMENT_COLLISION_B_E)
-                event.EventControler.event_game_send(ev)
+                event.EventControler.send_event(ev)
 
