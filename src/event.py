@@ -221,6 +221,7 @@ class EventControler:
                 print("except")
                 return
 
+            #单独检测持续输入事件
             if(ev.event_name == NAME_USER_CONTINUES_INPUT):
                 EventControler.publish(NAME_USER_CONTINUES_INPUT,ev)
             if(ev.type == QUIT):
@@ -265,19 +266,24 @@ class EnvironmentEventControler:
 TYPE_ENEMY = 600000
 TYPE_ENVIRONMENT = 600001
 
-#costom-event_name
+#costom - event_name - sys
 NAME_DEFAULT = -1
 NAME_USER_INPUT = 0
 NAME_USER_CONTINUES_INPUT = 1
 
-NAME_PLAYER_MOVE = 600128
+
+#costom - event_name - player
+NAME_PLAYER_MOVE = 600128 #实际玩家(操作者)触发对游戏玩家(飞机)的移动操作的事件
 NAME_PLAYER_SHOOT = 600129
+NAME_PLAYER_MOVING = 600130 #游戏玩家(飞机)正在移动中的事件
+NAME_PLAYER_STOP = 600131 #游戏玩家(飞机)停止的事件
 
 #costom - event_name - enemy
 NAME_ENEMY_ACT = 600512
 NAME_ENEMY_DEAD = 600513
 
 #costom - event_name - environment - collision
+"""环境：实体之间的碰撞事件。对应P、B、E 玩家、子弹、敌人"""
 NAME_ENVIRONMENT_COLLISION_P_E = 601024
 NAME_ENVIRONMENT_COLLISION_P_B = 601025
 NAME_ENVIRONMENT_COLLISION_B_E = 601026

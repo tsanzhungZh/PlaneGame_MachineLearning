@@ -40,30 +40,33 @@ class G_Engine:
         G_Engine.init_event_cb()
 
         #costom - add entity
-        player = Player()
-        EntityControler.add_new_player(player)
-
-
-
+        EntityControler.add_new_player()
+        EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
             clock.tick(60)
-
-            #ev = Event()
-            #EventControler.event_game_send(ev)
-
+            #update
             EventControler.update()
             EntityControler.update()
+
+
+            #costom
+            #EntityControler.set_player_pos(100,200)
+
+
+
+
+
+
+
 
 
             # 渲染
             screen.fill(base.BLACK)
             EntityControler.draw(screen)
-
             # 显示分数
             score_text = font.render(f"得分: {score}", True, base.WHITE)
             screen.blit(score_text, (10, 10))
-
             # 刷新屏幕
             pygame.display.flip()
 
@@ -85,8 +88,6 @@ class G_Engine:
         print("close")
         if(ev.type == QUIT):
             G_Engine.s_running_status = base.GAME_STATUS_CLOSE
-
-
 
 
 

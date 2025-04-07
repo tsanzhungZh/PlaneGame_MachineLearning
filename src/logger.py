@@ -61,7 +61,7 @@ class Logger:
         """
         level_value = self.LOG_LEVELS.get(level, 0)  # 默认为INFO
 
-        if level_value == self.log_level:
+        if level_value >= self.log_level:
             log_entry = f"[{self._get_timestamp()}] [{level}] {message}\n"
 
             # 写入文件

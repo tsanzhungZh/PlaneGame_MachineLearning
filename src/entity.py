@@ -16,9 +16,6 @@ class Player(pygame.sprite.Sprite):
         self.image.fill(self.color)
         self.rect = self.image.get_rect()
 
-
-
-
         self.radius_x = base.PLAYER_BODYSIZE_X / 2
         self.radius_y = base.PLAYER_BODYSIZE_Y / 2
 
@@ -33,21 +30,25 @@ class Player(pygame.sprite.Sprite):
         self.velocity_x = 0
         self.velocity_y = 0
         self.acceleration = 0.5  # 加速度
+        self.allow_exceed_max_speed = False
         self.max_speed = 5  # 最大速度
         self.friction = 0.95  # 摩擦系数(0-1)
+
+
 
         self.rect.x = self.x
         self.rect.y = self.y
 
-        self.init_event_cb()
+        self._init_event_cb()
 
     def calculate_pos(self):
         # 限制最大速度
-        speed = (self.velocity_x ** 2 + self.velocity_y ** 2) ** 0.5
-        if speed > self.max_speed:
-            scale = self.max_speed / speed
-            self.velocity_x *= scale
-            self.velocity_y *= scale
+        if(self.allow_exceed_max_speed == False):
+            speed = (self.velocity_x ** 2 + self.velocity_y ** 2) ** 0.5
+            if speed > self.max_speed:
+                scale = self.max_speed / speed
+                self.velocity_x *= scale
+                self.velocity_y *= scale
 
         # 应用摩擦力(逐渐减速)
         self.velocity_x *= self.friction
@@ -84,7 +85,7 @@ class Player(pygame.sprite.Sprite):
         ev = event.Event()
         ev.set_event_name(event.NAME_PLAYER_SHOOT)
         event.EventControler.send_event(ev)
-
+    """
     def calculate_pos2(self):
 
         print("cal pos")
@@ -126,7 +127,7 @@ class Player(pygame.sprite.Sprite):
 
         self.promoting_acc_x = 0
         self.promoting_acc_y = 0
-
+    """
 
     """
     ==================== EVENT HANDLER and CALLBACK ========================
@@ -134,7 +135,7 @@ class Player(pygame.sprite.Sprite):
     def event_handler(self):
         pass
 
-    def init_event_cb(self):
+    def _init_event_cb(self):
         event.EventControler.add_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_move)
         event.EventControler.add_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_shoot)
 
@@ -173,16 +174,38 @@ class Player(pygame.sprite.Sprite):
 
 class Bullet(pygame.sprite.Sprite):
 
-    def __init__(self, x, y):
+    def __init__(self):
         super().__init__()
-        self.image = pygame.Surface((5, 10))
-        self.image.fill(base.WHITE)
+
+        self.image = pygame.Surface((50, 40))
+        self.color = (0, 100, 255)
+        self.image.fill(self.color)
         self.rect = self.image.get_rect()
-        self.rect.centerx = x
-        self.rect.bottom = y
-        self.speedy = -10
+
+        self.radius_x = base.PLAYER_BODYSIZE_X / 2
+        self.radius_y = base.PLAYER_BODYSIZE_Y / 2
 
         self.id = 0
+        self.health = 1
+        self.attack = 1
+
+        self.x = 0
+        self.y = 0
+
+        # 运动参数
+        self.velocity_x = 0
+        self.velocity_y = 0
+        self.acceleration = 0.5  # 加速度
+        self.max_speed = 5  # 最大速度
+        self.friction = 0.95  # 摩擦系数(0-1)
+
+        self.rect.x = self.x
+        self.rect.y = self.y
+
+        self._init_event_cb()
+
+    def _init_event_cb(self):
+        pass
 
     def update(self):
         """出界检查"""
@@ -192,30 +215,38 @@ class Bullet(pygame.sprite.Sprite):
 
 
 class Enemy(pygame.sprite.Sprite):
-    def __init__(self, x, y):
+    def __init__(self):
         super().__init__()
-        self.image = pygame.Surface((100, 60))
-        self.image.fill(base.RED)
+
+        self.image = pygame.Surface((50, 40))
+        self.color = (0, 100, 255)
+        self.image.fill(self.color)
         self.rect = self.image.get_rect()
+
+        self.radius_x = base.PLAYER_BODYSIZE_X / 2
+        self.radius_y = base.PLAYER_BODYSIZE_Y / 2
 
         self.id = 0
         self.health = 1
         self.attack = 1
 
-        self.promoting_force_x = 10
-        self.promoting_force_y = 5
+        self.x = 0
+        self.y = 0
 
-        self.promoting_acc_x = 0
-        self.promoting_acc_y = 0
+        # 运动参数
+        self.velocity_x = 0
+        self.velocity_y = 0
+        self.acceleration = 0.5  # 加速度
+        self.max_speed = 5  # 最大速度
+        self.friction = 0.95  # 摩擦系数(0-1)
 
-        self.friction_acc_x = 0
-        self.friction_acc_y = 0
+        self.rect.x = self.x
+        self.rect.y = self.y
 
-        self.accelerate_x = 0
-        self.accelerate_y = 0
+        self._init_event_cb()
 
-        self.speed_x = 0
-        self.speed_y = 0
+    def _init_event_cb(self):
+        pass
     def update(self):
         pass
 
@@ -248,11 +279,70 @@ class EntityControler:
     def init_group():
         pass
 
+
+
+
     @staticmethod
-    def add_new_player(ply:Player)->None:
+    def add_new_player(x:int=0,y:int=0)->int:
+        ply = Player()
+        ply.x = x
+        ply.y = y
         EntityControler.g_all_entityGroup.add(ply)
         EntityControler.g_playerGroup.add(ply)
-        pass
+        return len(EntityControler.g_playerGroup)
+
+    @staticmethod
+    def get_player(player_id:int=0)->Player:
+        for player in EntityControler.g_playerGroup:
+            if(player.id == player_id):
+                return player
+        return None
+
+    @staticmethod
+    def modify_player_attribute(ply:Player=None,ply_id=0,attribute:dict= {'default':1})->bool:
+        if(ply==None):
+            player = EntityControler.get_player(player_id=ply_id)
+        else:
+            player = ply
+        for k in attribute.keys():
+            if(k == 'x'):
+                player.x = attribute.get(k)
+            elif(k == 'y'):
+                player.y = attribute.get(k)
+            elif (k == 'velocity_x'):
+                player.velocity_x = attribute.get(k)
+            elif (k == 'velocity_y'):
+                player.velocity_y = attribute.get(k)
+            elif(k == 'allow_exceed_max_speed'):
+                player.allow_exceed_max_speed = attribute.get(k)
+
+
+
+        return True
+
+    @staticmethod
+    def set_player_pos(x:int=0,y:int=0,ply:Player=None,ply_id:int=0):
+        if(ply==None):
+            for player in EntityControler.g_playerGroup:
+                if(player.id == ply_id):
+                    player.x = x
+                    player.y = y
+        else:
+            ply.x = x
+            ply.y = y
+
+    def _set_entity_pos( x :int=0,y:int=0,et=None,et_id:int=0):
+        if(et == None):
+            for entity in EntityControler.g_all_entityGroup:
+                if(entity.id == et_id):
+                    entity.x = x
+                    entity.y = y
+        else:
+            et.x = x
+            et.y = y
+
+
+
     @staticmethod
     def add_new_enemy(enemy:Enemy) -> None:
         EntityControler.g_all_entityGroup.add(enemy)
