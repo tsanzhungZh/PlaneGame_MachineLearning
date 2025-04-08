@@ -11,15 +11,15 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
 
-        self.image = pygame.Surface((50, 40))
-        self.color = (0, 100, 255)
+        self.image = pygame.Surface((base.PLAYER_BODYSIZE_X, base.PLAYER_BODYSIZE_Y))
+        self.color = base.PLAYER_BODY_COLOR
         self.image.fill(self.color)
         self.rect = self.image.get_rect()
 
         self.radius_x = base.PLAYER_BODYSIZE_X / 2
         self.radius_y = base.PLAYER_BODYSIZE_Y / 2
 
-        self.id = 0
+        self.id = base.PLAYER_ID_BEGIN
         self.health = 1
         self.attack = 1
 
@@ -29,10 +29,10 @@ class Player(pygame.sprite.Sprite):
         # 运动参数
         self.velocity_x = 0
         self.velocity_y = 0
-        self.acceleration = 0.5  # 加速度
-        self.allow_exceed_max_speed = False
-        self.max_speed = 5  # 最大速度
-        self.friction = 0.95  # 摩擦系数(0-1)
+        self.acceleration = base.PLAYER_ACCELERATION  # 加速度
+        self.allow_exceed_max_speed = base.PLAYER_ALLOW_EXCEED_MAX_SPEED
+        self.max_speed = base.PLAYER_MAX_SPEED  # 最大速度
+        self.friction = base.ENVIRONMENT_AIR_DENSITY  # 摩擦系数(0-1)
 
 
 
@@ -85,49 +85,6 @@ class Player(pygame.sprite.Sprite):
         ev = event.Event()
         ev.set_event_name(event.NAME_PLAYER_SHOOT)
         event.EventControler.send_event(ev)
-    """
-    def calculate_pos2(self):
-
-        print("cal pos")
-        #更新摩擦力
-        self.friction_acc_x = 1 / 2  * abs(self.speed_x) ** 2
-        self.friction_acc_y = 1 / 2  * abs(self.speed_y) ** 2
-
-        if(self.speed_x>0):
-            self.friction_acc_x = -self.friction_acc_x
-        if(self.speed_y>0):
-            self.friction_acc_y = -self.friction_acc_y
-
-        #更新acc
-        self.accelerate_x = self.promoting_acc_x + self.friction_acc_x
-        self.accelerate_y = self.promoting_acc_y + self.friction_acc_y
-        print(self.accelerate_x)
-        print(self.accelerate_y)
-
-
-        self.speed_x += self.accelerate_x
-        self.speed_y += self.accelerate_y
-        print(self.speed_x)
-        print(self.speed_y)
-        # 超速检测
-        '''
-        if (abs(self.speed_x) > base.PLAYER_MAX_SPEED):
-            if (self.speed_x > 0):
-                self.speed_x = base.PLAYER_MAX_SPEED
-            else:
-                self.speed_x = -base.PLAYER_MAX_SPEED
-        if (abs(self.speed_y) > base.PLAYER_MAX_SPEED):
-            if (self.speed_y > 0):
-                self.speed_y = base.PLAYER_MAX_SPEED
-            else:
-                self.speed_y = -base.PLAYER_MAX_SPEED
-        '''
-        self.rect.x += self.speed_x
-        self.rect.y += self.speed_y
-
-        self.promoting_acc_x = 0
-        self.promoting_acc_y = 0
-    """
 
     """
     ==================== EVENT HANDLER and CALLBACK ========================
@@ -164,12 +121,13 @@ class Player(pygame.sprite.Sprite):
                 self.promoting_acc_x = self.promoting_force_y
         """
 
-
     def cb_player_shoot(self,ev : event.Event)->None:
         if(ev.event_name == event.NAME_USER_INPUT):
             if(ev.key == event.K_SPACE):
                 self.shoot()
+
     def cb_player_hit(self,ev : event.Event)->None:
+        """击中目标事件"""
         pass
 
 class Bullet(pygame.sprite.Sprite):
@@ -177,15 +135,15 @@ class Bullet(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
 
-        self.image = pygame.Surface((50, 40))
-        self.color = (0, 100, 255)
+        self.image = pygame.Surface((base.BULLET_BODYSIZE_X, base.BULLET_BODYSIZE_Y))
+        self.color = base.BULLET_BODY_COLOR
         self.image.fill(self.color)
         self.rect = self.image.get_rect()
 
-        self.radius_x = base.PLAYER_BODYSIZE_X / 2
-        self.radius_y = base.PLAYER_BODYSIZE_Y / 2
+        self.radius_x = base.BULLET_BODYSIZE_X / 2
+        self.radius_y = base.BULLET_BODYSIZE_Y / 2
 
-        self.id = 0
+        self.id = base.BULLET_ID_BEGIN
         self.health = 1
         self.attack = 1
 
@@ -195,9 +153,10 @@ class Bullet(pygame.sprite.Sprite):
         # 运动参数
         self.velocity_x = 0
         self.velocity_y = 0
-        self.acceleration = 0.5  # 加速度
-        self.max_speed = 5  # 最大速度
-        self.friction = 0.95  # 摩擦系数(0-1)
+        self.acceleration = base.BULLET_ACCELERATION  # 加速度
+        self.allow_exceed_max_speed = base.BULLET_ALLOW_EXCEED_MAX_SPEED
+        self.max_speed = base.BULLET_MAX_SPEED  # 最大速度
+        self.friction = base.ENVIRONMENT_AIR_DENSITY  # 摩擦系数(0-1)
 
         self.rect.x = self.x
         self.rect.y = self.y
@@ -218,15 +177,15 @@ class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
 
-        self.image = pygame.Surface((50, 40))
-        self.color = (0, 100, 255)
+        self.image = pygame.Surface((base.ENEMY_BODYSIZE_X, base.ENEMY_BODYSIZE_Y))
+        self.color = base.ENEMY_BODY_COLOR
         self.image.fill(self.color)
         self.rect = self.image.get_rect()
 
-        self.radius_x = base.PLAYER_BODYSIZE_X / 2
-        self.radius_y = base.PLAYER_BODYSIZE_Y / 2
+        self.radius_x = base.ENEMY_BODYSIZE_X / 2
+        self.radius_y = base.ENEMY_BODYSIZE_Y / 2
 
-        self.id = 0
+        self.id = base.ENEMY_ID_BEGIN
         self.health = 1
         self.attack = 1
 
@@ -236,15 +195,48 @@ class Enemy(pygame.sprite.Sprite):
         # 运动参数
         self.velocity_x = 0
         self.velocity_y = 0
-        self.acceleration = 0.5  # 加速度
-        self.max_speed = 5  # 最大速度
-        self.friction = 0.95  # 摩擦系数(0-1)
+        self.acceleration = base.ENEMY_ACCELERATION  # 加速度
+        self.allow_exceed_max_speed = base.ENEMY_ALLOW_EXCEED_MAX_SPEED
+        self.max_speed = base.ENEMY_MAX_SPEED  # 最大速度
+        self.friction = base.ENVIRONMENT_AIR_DENSITY  # 摩擦系数(0-1)
 
         self.rect.x = self.x
         self.rect.y = self.y
 
         self._init_event_cb()
 
+    def calculate_pos(self):
+        # 限制最大速度
+        if(self.allow_exceed_max_speed == False):
+            speed = (self.velocity_x ** 2 + self.velocity_y ** 2) ** 0.5
+            if speed > self.max_speed:
+                scale = self.max_speed / speed
+                self.velocity_x *= scale
+                self.velocity_y *= scale
+
+        # 应用摩擦力(逐渐减速)
+        self.velocity_x *= self.friction
+        self.velocity_y *= self.friction
+
+        # 如果速度很小，直接设为0
+        if abs(self.velocity_x) < 0.1: self.velocity_x = 0
+        if abs(self.velocity_y) < 0.1: self.velocity_y = 0
+
+        # 更新位置
+        self.x += self.velocity_x
+        self.y += self.velocity_y
+
+        # 边界检查
+        self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
+        self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+
+        self.rect.x = self.x
+        self.rect.y = self.y
+
+
+
+
+    """=====================event call back ==========================="""
     def _init_event_cb(self):
         pass
     def update(self):
@@ -280,8 +272,7 @@ class EntityControler:
         pass
 
 
-
-
+    """=====-----<<<<< player operation >>>>>-----====="""
     @staticmethod
     def add_new_player(x:int=0,y:int=0)->int:
         ply = Player()
@@ -321,16 +312,6 @@ class EntityControler:
         return True
 
     @staticmethod
-    def set_player_pos(x:int=0,y:int=0,ply:Player=None,ply_id:int=0):
-        if(ply==None):
-            for player in EntityControler.g_playerGroup:
-                if(player.id == ply_id):
-                    player.x = x
-                    player.y = y
-        else:
-            ply.x = x
-            ply.y = y
-
     def _set_entity_pos( x :int=0,y:int=0,et=None,et_id:int=0):
         if(et == None):
             for entity in EntityControler.g_all_entityGroup:
@@ -341,6 +322,24 @@ class EntityControler:
             et.x = x
             et.y = y
 
+    @staticmethod
+    def set_player_pos(x: int = 0, y: int = 0, ply: Player = None, ply_id: int = 0):
+
+        try:
+            EntityControler._set_entity_pos(x, y, ply, ply_id)
+        except Exception as e:  # 捕获所有异常
+            if (ply == None):
+                for player in EntityControler.g_playerGroup:
+                    if (player.id == ply_id):
+                        player.x = x
+                        player.y = y
+            else:
+                ply.x = x
+                ply.y = y
+
+    @staticmethod
+    def set_bullet_pos(x: int = 0, y: int = 0, blt: Bullet = None, blt_id: int = 0):
+        EntityControler._set_entity_pos(x, y, blt, blt_id)
 
 
     @staticmethod

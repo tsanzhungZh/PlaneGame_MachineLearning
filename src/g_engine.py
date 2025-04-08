@@ -41,7 +41,9 @@ class G_Engine:
 
         #costom - add entity
         EntityControler.add_new_player()
-        EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
+        #EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
+
+
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
             clock.tick(60)

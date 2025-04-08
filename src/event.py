@@ -281,12 +281,18 @@ NAME_PLAYER_STOP = 600131 #游戏玩家(飞机)停止的事件
 #costom - event_name - enemy
 NAME_ENEMY_ACT = 600512
 NAME_ENEMY_DEAD = 600513
+NAME_ENEMY_SHOOT = 600514
+
+
 
 #costom - event_name - environment - collision
 """环境：实体之间的碰撞事件。对应P、B、E 玩家、子弹、敌人"""
 NAME_ENVIRONMENT_COLLISION_P_E = 601024
 NAME_ENVIRONMENT_COLLISION_P_B = 601025
 NAME_ENVIRONMENT_COLLISION_B_E = 601026
+
+
+
 
 """pygame给出的类型================================================================================================="""
 #pygame-type
