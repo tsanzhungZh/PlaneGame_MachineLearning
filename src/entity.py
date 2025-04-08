@@ -6,8 +6,6 @@ import event
 
 class Player(pygame.sprite.Sprite):
 
-    s_Player_max_speed = base.PLAYER_MAX_SPEED
-
     def __init__(self):
         super().__init__()
 
@@ -132,7 +130,7 @@ class Player(pygame.sprite.Sprite):
 
 class Bullet(pygame.sprite.Sprite):
 
-    def __init__(self):
+    def __init__(self,x,y):
         super().__init__()
 
         self.image = pygame.Surface((base.BULLET_BODYSIZE_X, base.BULLET_BODYSIZE_Y))
@@ -147,8 +145,8 @@ class Bullet(pygame.sprite.Sprite):
         self.health = 1
         self.attack = 1
 
-        self.x = 0
-        self.y = 0
+        self.x = x
+        self.y = y
 
         # 运动参数
         self.velocity_x = 0
@@ -167,10 +165,36 @@ class Bullet(pygame.sprite.Sprite):
         pass
 
     def update(self):
+        self.calculate_pos()
+    def calculate_pos(self):
         """出界检查"""
-        self.rect.y += self.speedy
-        if self.rect.bottom < 0:
-            self.kill()
+        # 限制最大速度
+        if (self.allow_exceed_max_speed == False):
+            speed = (self.velocity_x ** 2 + self.velocity_y ** 2) ** 0.5
+            if speed > self.max_speed:
+                scale = self.max_speed / speed
+                self.velocity_x *= scale
+                self.velocity_y *= scale
+
+        # 应用摩擦力(逐渐减速)
+        self.velocity_x *= self.friction
+        self.velocity_y *= self.friction
+
+        # 如果速度很小，直接设为0
+        if abs(self.velocity_x) < 0.1: self.velocity_x = 0
+        if abs(self.velocity_y) < 0.1: self.velocity_y = 0
+
+        # 更新位置
+        self.x += self.velocity_x
+        self.y += self.velocity_y
+
+        # 边界检查
+        self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
+        self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+
+
+        self.rect.x = self.x
+        self.rect.y = self.y
 
 
 class Enemy(pygame.sprite.Sprite):
@@ -251,9 +275,10 @@ class EntityControler:
     g_enemyGroup = pygame.sprite.Group()
     g_bulletGroup = pygame.sprite.Group()
 
+    g_id_pool = set()
     @staticmethod
     def update():
-        EntityControler.p_collision_judgment()
+        EntityControler._collision_judgment()
         EntityControler.g_all_entityGroup.update()
 
     @staticmethod
@@ -270,6 +295,14 @@ class EntityControler:
     @staticmethod
     def init_group():
         pass
+    @staticmethod
+    def _alloc_id(begin=base.PLAYER_ID_BEGIN,end=base.ENTITY_ID_END):
+        for i in range(begin,end):
+            if i in EntityControler.g_id_pool:
+                continue
+            else:
+                return i
+
 
 
     """=====-----<<<<< player operation >>>>>-----====="""
@@ -280,7 +313,41 @@ class EntityControler:
         ply.y = y
         EntityControler.g_all_entityGroup.add(ply)
         EntityControler.g_playerGroup.add(ply)
+
+        ply_id = EntityControler._alloc_id(base.PLAYER_ID_BEGIN,base.ENEMY_ID_BEGIN)
+        EntityControler.g_id_pool.add(ply_id)
+
         return len(EntityControler.g_playerGroup)
+
+    @staticmethod
+    def add_new_bullet(x:int=0,y:int=0,v:int=base.BULLET_INITIAL_SPEED)->int:
+        blt = Bullet(x,y)
+        blt.velocity_y = -v
+        blt.velocity_x = 0
+
+        EntityControler.g_all_entityGroup.add(blt)
+        EntityControler.g_bulletGroup.add(blt)
+
+        blt_id = EntityControler._alloc_id(base.BULLET_ID_BEGIN, base.ENTITY_ID_END)
+        EntityControler.g_id_pool.add(blt_id)
+
+        return len(EntityControler.g_bulletGroup)
+
+    @staticmethod
+    def _remove_entity(id:int = 0)->bool:
+        for et in EntityControler.g_all_entityGroup:
+            if(et.id == id):
+                et.kill()
+                EntityControler.g_id_pool.remove(et.id)
+                return True
+        return False
+
+    @staticmethod
+    def _get_entity(id:int = 0):
+        for et in EntityControler.g_all_entityGroup:
+            if(et.id == id):
+                return et
+        return None
 
     @staticmethod
     def get_player(player_id:int=0)->Player:
@@ -290,26 +357,27 @@ class EntityControler:
         return None
 
     @staticmethod
-    def modify_player_attribute(ply:Player=None,ply_id=0,attribute:dict= {'default':1})->bool:
-        if(ply==None):
-            player = EntityControler.get_player(player_id=ply_id)
+    def modify_entity_attribute(entity=None, entity_id=0, attribute:dict= {'default':1})->bool:
+        ret = True
+        if(entity==None):
+            et = EntityControler._get_entity(id=entity_id)
         else:
-            player = ply
+            et = entity
         for k in attribute.keys():
             if(k == 'x'):
-                player.x = attribute.get(k)
+                et.x = attribute.get(k)
             elif(k == 'y'):
-                player.y = attribute.get(k)
+                et.y = attribute.get(k)
             elif (k == 'velocity_x'):
-                player.velocity_x = attribute.get(k)
+                et.velocity_x = attribute.get(k)
             elif (k == 'velocity_y'):
-                player.velocity_y = attribute.get(k)
+                et.velocity_y = attribute.get(k)
             elif(k == 'allow_exceed_max_speed'):
-                player.allow_exceed_max_speed = attribute.get(k)
+                et.allow_exceed_max_speed = attribute.get(k)
+            else:
+                ret = False
 
-
-
-        return True
+        return ret
 
     @staticmethod
     def _set_entity_pos( x :int=0,y:int=0,et=None,et_id:int=0):
@@ -340,21 +408,12 @@ class EntityControler:
     @staticmethod
     def set_bullet_pos(x: int = 0, y: int = 0, blt: Bullet = None, blt_id: int = 0):
         EntityControler._set_entity_pos(x, y, blt, blt_id)
+    def set_enemy_pos(x: int = 0, y: int = 0, enemy: Enemy = None, enemy_id: int = 0):
 
-
-    @staticmethod
-    def add_new_enemy(enemy:Enemy) -> None:
-        EntityControler.g_all_entityGroup.add(enemy)
-        EntityControler.g_enemyGroup.add(enemy)
-        pass
-    @staticmethod
-    def add_new_bullet(bullet: Bullet) -> None:
-        EntityControler.g_all_entityGroup.add(bullet)
-        EntityControler.g_bulletGroup(bullet)
-        pass
+        EntityControler._set_entity_pos(x, y, enemy, enemy_id)
 
     @staticmethod
-    def p_collision_judgment():
+    def _collision_judgment():
 
         """player collisions judgement (with enemy)"""
         player_collisions = pygame.sprite.groupcollide(EntityControler.g_playerGroup,EntityControler.g_enemyGroup,False,False)

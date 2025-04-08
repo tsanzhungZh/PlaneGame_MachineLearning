@@ -43,6 +43,7 @@ class G_Engine:
         EntityControler.add_new_player()
         #EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
 
+        EntityControler.add_new_bullet(400,600,50)
 
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
@@ -71,6 +72,8 @@ class G_Engine:
             screen.blit(score_text, (10, 10))
             # 刷新屏幕
             pygame.display.flip()
+
+
 
         pygame.quit()
         sys.exit()
