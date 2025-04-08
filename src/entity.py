@@ -61,8 +61,13 @@ class Player(pygame.sprite.Sprite):
         self.y += self.velocity_y
 
         # 边界检查
-        self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
-        self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+        #self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
+        #self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+        self.x = max(0, min(self.x, base.GAME_SCREEN_WIDTH))
+        self.y = max(0, min(self.y, base.GAME_SCREEN_HEIGHT))
+
+
+
 
         self.rect.x = self.x
         self.rect.y = self.y
@@ -81,7 +86,9 @@ class Player(pygame.sprite.Sprite):
     def shoot(self):
         """发送一个玩家射击的事件"""
         ev = event.Event()
+        ev.set_event_type(event.TYPE_PLAYER)
         ev.set_event_name(event.NAME_PLAYER_SHOOT)
+        ev.player_id = self.id
         event.EventControler.send_event(ev)
 
     """
@@ -92,7 +99,7 @@ class Player(pygame.sprite.Sprite):
 
     def _init_event_cb(self):
         event.EventControler.add_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_move)
-        event.EventControler.add_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_shoot)
+        event.EventControler.add_subscriber(event.NAME_USER_INPUT, self.cb_player_shoot)
 
     def cb_player_move(self,ev : event.Event)->None:
         # 加速度计算
@@ -121,7 +128,7 @@ class Player(pygame.sprite.Sprite):
 
     def cb_player_shoot(self,ev : event.Event)->None:
         if(ev.event_name == event.NAME_USER_INPUT):
-            if(ev.key == event.K_SPACE):
+            if(ev.key == event.K_SPACE and ev.type == event.TYPE_KEYDOWN):
                 self.shoot()
 
     def cb_player_hit(self,ev : event.Event)->None:
@@ -183,8 +190,8 @@ class Bullet(pygame.sprite.Sprite):
         self.velocity_y *= self.friction
 
         # 如果速度很小，直接设为0
-        if abs(self.velocity_x) < 0.1: self.velocity_x = 0
-        if abs(self.velocity_y) < 0.1: self.velocity_y = 0
+        if abs(self.velocity_x) < base.BULLET_STOP_SPEED_THRESHOLD: self.velocity_x = 0
+        if abs(self.velocity_y) < base.BULLET_STOP_SPEED_THRESHOLD: self.velocity_y = 0
 
         # 更新位置
         self.x += self.velocity_x
@@ -218,10 +225,13 @@ class Bullet(pygame.sprite.Sprite):
             self.moving_status_changed = False
 
             ev = event.Event()
+            ev.set_event_type(event.TYPE_BULLET)
             ev.set_event_name(event.NAME_BULLET_STOP)
             ev.bullet_id = self.id
             ev.player_id = self.owner_id
+            print(f"blt id {self.id}")
             event.EventControler.send_event(ev)
+
 
     def update(self):
         self.calculate_pos()
@@ -287,8 +297,12 @@ class Enemy(pygame.sprite.Sprite):
         self.y += self.velocity_y
 
         # 边界检查
-        self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
-        self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+        #self.x = max(self.radius_x, min(self.x, base.GAME_SCREEN_WIDTH - self.radius_x))
+        #self.y = max(self.radius_y, min(self.y, base.GAME_SCREEN_HEIGHT - self.radius_y))
+
+        self.x = max(0, min(self.x, base.GAME_SCREEN_WIDTH))
+        self.y = max(0, min(self.y, base.GAME_SCREEN_HEIGHT))
+
 
         self.rect.x = self.x
         self.rect.y = self.y
@@ -344,6 +358,8 @@ class EntityControler:
             if i in EntityControler.g_id_pool:
                 continue
             else:
+                EntityControler.g_id_pool.add(i)
+                print(f"alloc id{i}")
                 return i
 
 
@@ -364,15 +380,18 @@ class EntityControler:
 
     @staticmethod
     def add_new_bullet(x:int=0,y:int=0,v:int=base.BULLET_INITIAL_SPEED)->int:
-        blt = Bullet(x,y)
+
+        blt = Bullet(x + base.PLAYER_BODYSIZE_X/2,y)
         blt.velocity_y = -v
         blt.velocity_x = 0
 
+        blt_id = EntityControler._alloc_id(base.BULLET_ID_BEGIN, base.ENTITY_ID_END)
+        blt.id = blt_id
+
+        EntityControler.g_id_pool.add(blt_id)
         EntityControler.g_all_entityGroup.add(blt)
         EntityControler.g_bulletGroup.add(blt)
 
-        blt_id = EntityControler._alloc_id(base.BULLET_ID_BEGIN, base.ENTITY_ID_END)
-        EntityControler.g_id_pool.add(blt_id)
 
         return len(EntityControler.g_bulletGroup)
 
@@ -480,6 +499,15 @@ class EntityControler:
     @staticmethod
     def _init_event_cb():
         event.EventControler.add_subscriber(event.NAME_BULLET_STOP,EntityControler.cb_bullet_stop)
+        event.EventControler.add_subscriber(event.NAME_PLAYER_SHOOT, EntityControler.cb_player_shoot)
+
+    @staticmethod
+    def cb_player_shoot(ev:event.Event):
+        if(ev.event_name == event.NAME_PLAYER_SHOOT):
+            player = EntityControler.get_player(ev.player_id)
+            x = player.x
+            y = player.y
+            EntityControler.add_new_bullet(x,y)
 
     @staticmethod
     def cb_bullet_stop(ev:event.Event):

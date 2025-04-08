@@ -40,10 +40,9 @@ class G_Engine:
         G_Engine.init_event_cb()
 
         #costom - add entity
-        EntityControler.add_new_player()
+        EntityControler.add_new_player(base.GAME_SCREEN_WIDTH/2 - base.PLAYER_BODYSIZE_X/2,base.GAME_SCREEN_HEIGHT - 2 * base.PLAYER_BODYSIZE_Y)
         #EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
-
-        EntityControler.add_new_bullet(400,600,50)
+        EntityControler.add_new_bullet(base.GAME_SCREEN_WIDTH/2 - base.BULLET_BODYSIZE_X/2,base.GAME_SCREEN_HEIGHT - 2 * base.PLAYER_BODYSIZE_Y,base.BULLET_INITIAL_SPEED)
 
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 

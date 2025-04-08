@@ -227,12 +227,15 @@ class EventControler:
             #单独检测持续输入事件
             if(ev.event_name == NAME_USER_CONTINUES_INPUT):
                 EventControler.publish(NAME_USER_CONTINUES_INPUT,ev)
+
             if(ev.type == QUIT):
                 EventControler.publish(QUIT,ev)
             elif(ev.event_name == NAME_USER_INPUT and EventControler.s_player_event_reception==True):
                 EventControler.publish(NAME_USER_INPUT,ev)
             elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
                 pass
+            elif (ev.type == TYPE_PLAYER and EventControler.s_player_event_reception == True):
+                EventControler.publish(ev.event_name, ev)
             elif(ev.type==TYPE_BULLET):
                 EventControler.publish(ev.event_name,ev)
             elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
@@ -271,6 +274,7 @@ class EnvironmentEventControler:
 TYPE_ENEMY = 600000
 TYPE_ENVIRONMENT = 600001
 TYPE_BULLET = 600002
+TYPE_PLAYER = 600003
 
 #costom - event_name - sys
 NAME_DEFAULT = -1
