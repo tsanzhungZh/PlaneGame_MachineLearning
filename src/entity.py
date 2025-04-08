@@ -142,6 +142,7 @@ class Bullet(pygame.sprite.Sprite):
         self.radius_y = base.BULLET_BODYSIZE_Y / 2
 
         self.id = base.BULLET_ID_BEGIN
+        self.owner_id = 0
         self.health = 1
         self.attack = 1
 
@@ -156,16 +157,17 @@ class Bullet(pygame.sprite.Sprite):
         self.max_speed = base.BULLET_MAX_SPEED  # 最大速度
         self.friction = base.ENVIRONMENT_AIR_DENSITY  # 摩擦系数(0-1)
 
+        self.is_stop = False
+        self.moving_status_changed = True
+
         self.rect.x = self.x
         self.rect.y = self.y
 
         self._init_event_cb()
 
-    def _init_event_cb(self):
-        pass
 
-    def update(self):
-        self.calculate_pos()
+
+
     def calculate_pos(self):
         """出界检查"""
         # 限制最大速度
@@ -195,6 +197,40 @@ class Bullet(pygame.sprite.Sprite):
 
         self.rect.x = self.x
         self.rect.y = self.y
+
+
+        if(self.velocity_x == self.velocity_y == 0):
+            if(self.is_stop == False):
+                self.is_stop = True
+                self.moving_status_changed = True
+            else:
+                self.moving_status_changed = False
+        else:
+            if(self.is_stop == True):
+                self.is_stop = False
+                self.moving_status_changed = True
+            else:
+                self.moving_status_changed = False
+
+
+    def check_move(self):
+        if(self.moving_status_changed == True):
+            self.moving_status_changed = False
+
+            ev = event.Event()
+            ev.set_event_name(event.NAME_BULLET_STOP)
+            ev.bullet_id = self.id
+            ev.player_id = self.owner_id
+            event.EventControler.send_event(ev)
+
+    def update(self):
+        self.calculate_pos()
+        self.check_move()
+
+
+
+    def _init_event_cb(self):
+        pass
 
 
 class Enemy(pygame.sprite.Sprite):
@@ -290,11 +326,18 @@ class EntityControler:
 
     @staticmethod
     def init():
-        pass
+        EntityControler._init_event_cb()
+        EntityControler.init_group()
+        EntityControler.init_entity_logger()
 
     @staticmethod
     def init_group():
         pass
+
+    @staticmethod
+    def init_entity_logger():
+        pass
+
     @staticmethod
     def _alloc_id(begin=base.PLAYER_ID_BEGIN,end=base.ENTITY_ID_END):
         for i in range(begin,end):
@@ -335,6 +378,12 @@ class EntityControler:
 
     @staticmethod
     def _remove_entity(id:int = 0)->bool:
+
+        if(id not in EntityControler.g_id_pool):
+            return False
+
+        """add log"""
+
         for et in EntityControler.g_all_entityGroup:
             if(et.id == id):
                 et.kill()
@@ -428,3 +477,18 @@ class EntityControler:
                 ev = event.Event(enemy_id=enemy.id,bullet_id=bullet.id,type=event.TYPE_ENVIRONMENT,event_name=event.NAME_ENVIRONMENT_COLLISION_B_E)
                 event.EventControler.send_event(ev)
 
+    @staticmethod
+    def _init_event_cb():
+        event.EventControler.add_subscriber(event.NAME_BULLET_STOP,EntityControler.cb_bullet_stop)
+
+    @staticmethod
+    def cb_bullet_stop(ev:event.Event):
+        if(ev.event_name== event.NAME_BULLET_STOP):
+            blt_id = ev.bullet_id
+
+            if(True == EntityControler._remove_entity(blt_id)):
+
+                ev = event.Event()
+                ev.set_event_type(event.TYPE_BULLET)
+                ev.set_event_name(event.NAME_BULLET_DEAD)
+                event.EventControler.send_event(ev)

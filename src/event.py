@@ -36,6 +36,9 @@ class Event:
 
     def __del__(self):
         pass
+    def set_event_type(self,ev_type):
+        if(ev_type>=600000):
+            self.type = ev_type
     def set_event_name(self,ev_name):
         self.event_name = ev_name
     def set_enemy_id(self,id):
@@ -230,6 +233,8 @@ class EventControler:
                 EventControler.publish(NAME_USER_INPUT,ev)
             elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
                 pass
+            elif(ev.type==TYPE_BULLET):
+                EventControler.publish(ev.event_name,ev)
             elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
                 pass
             else:
@@ -265,6 +270,7 @@ class EnvironmentEventControler:
 非pygame特有的输入事件的时候，尽量不以该类型作为仲裁判断"""
 TYPE_ENEMY = 600000
 TYPE_ENVIRONMENT = 600001
+TYPE_BULLET = 600002
 
 #costom - event_name - sys
 NAME_DEFAULT = -1
@@ -277,12 +283,17 @@ NAME_PLAYER_MOVE = 600128 #实际玩家(操作者)触发对游戏玩家(飞机)�
 NAME_PLAYER_SHOOT = 600129
 NAME_PLAYER_MOVING = 600130 #游戏玩家(飞机)正在移动中的事件
 NAME_PLAYER_STOP = 600131 #游戏玩家(飞机)停止的事件
+NAME_PLAYER_DEAD = 600132
 
 #costom - event_name - enemy
 NAME_ENEMY_ACT = 600512
 NAME_ENEMY_DEAD = 600513
 NAME_ENEMY_SHOOT = 600514
 
+
+#costom - event_name - bullet
+NAME_BULLET_STOP = 601024
+NAME_BULLET_DEAD = 601025
 
 
 #costom - event_name - environment - collision
