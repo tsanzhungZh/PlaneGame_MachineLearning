@@ -40,6 +40,10 @@ class Player(pygame.sprite.Sprite):
         self.rect.y = self.y
 
         self._init_event_cb()
+    def kill(self):
+
+        self._remove_event_cb()
+        super().kill()
 
     def calculate_pos(self):
         # 限制最大速度
@@ -93,11 +97,18 @@ class Player(pygame.sprite.Sprite):
         ev.player_id = self.id
         event.EventControler.send_event(ev)
 
+
+
+
     """
     ==================== EVENT HANDLER and CALLBACK ========================
     """
     def event_handler(self):
         pass
+
+    def _remove_event_cb(self):
+        event.EventControler.remove_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_move)
+        event.EventControler.remove_subscriber(event.NAME_USER_INPUT, self.cb_player_shoot)
 
     def _init_event_cb(self):
         event.EventControler.add_subscriber(event.NAME_USER_CONTINUES_INPUT, self.cb_player_move)
@@ -231,7 +242,6 @@ class Bullet(pygame.sprite.Sprite):
             ev.set_event_name(event.NAME_BULLET_STOP)
             ev.bullet_id = self.id
             ev.player_id = self.owner_id
-            print(f"blt id {self.id}")
             event.EventControler.send_event(ev)
 
 
@@ -239,8 +249,13 @@ class Bullet(pygame.sprite.Sprite):
         self.calculate_pos()
         self.check_move()
 
+    def kill(self):
 
+        self._remove_event_cb()
+        super().kill()
 
+    def _remove_event_cb(self):
+        pass
     def _init_event_cb(self):
         pass
 
@@ -277,6 +292,9 @@ class Enemy(pygame.sprite.Sprite):
 
         self._init_event_cb()
 
+    def kill(self):
+        self._remove_event_cb()
+        super().kill()
     def calculate_pos(self):
         # 限制最大速度
         if(self.allow_exceed_max_speed == False):
@@ -313,11 +331,19 @@ class Enemy(pygame.sprite.Sprite):
         self.calculate_pos()
 
     """=====================event call back ==========================="""
+
+
+    def _remove_event_cb(self):
+        pass
     def _init_event_cb(self):
         pass
 
 
 class EntityControler:
+
+    #player
+    g_player_survive = True
+
     #group
     g_random_timer_cnt = 0
 
@@ -332,11 +358,8 @@ class EntityControler:
 
         EntityControler._collision_judgment()
         EntityControler.g_all_entityGroup.update()
-
         EntityControler._enemy_follow()
-
         EntityControler._random_generate_enemy()
-
     @staticmethod
     def draw(screen):
         EntityControler.g_all_entityGroup.draw(screen)
@@ -357,6 +380,17 @@ class EntityControler:
     @staticmethod
     def init_entity_logger():
         pass
+
+    @staticmethod
+    def reset():
+        for enemy in EntityControler.g_enemyGroup:
+            enemy.kill()
+        ply = EntityControler.get_player()
+        x = base.GAME_SCREEN_WIDTH / 2 - base.PLAYER_BODYSIZE_X / 2
+        y = base.GAME_SCREEN_HEIGHT - 2 * base.PLAYER_BODYSIZE_Y
+        EntityControler.set_player_pos(x,y,ply)
+
+        EntityControler.g_player_survive = True
 
     @staticmethod
     def _alloc_id(begin=base.PLAYER_ID_BEGIN,end=base.ENTITY_ID_END):
@@ -519,9 +553,32 @@ class EntityControler:
     @staticmethod
     def set_bullet_pos(x: int = 0, y: int = 0, blt: Bullet = None, blt_id: int = 0):
         EntityControler._set_entity_pos(x, y, blt, blt_id)
-    def set_enemy_pos(x: int = 0, y: int = 0, enemy: Enemy = None, enemy_id: int = 0):
+
+    @staticmethod
+    def set_enemy_pos(x: int = 0, y: int = 0, enemy: Enemy = None, enemy_id: int =0):
 
         EntityControler._set_entity_pos(x, y, enemy, enemy_id)
+
+    @staticmethod
+    def is_exist_bullets()->bool:
+
+        ret = True if len(EntityControler.g_bulletGroup) > 0 else False
+        return ret
+
+    @staticmethod
+    def set_player_action(action):
+        player = EntityControler.get_player(0)
+        if(action==0):
+            player.velocity_y -= player.acceleration
+        elif(action==1):
+            player.velocity_y += player.acceleration
+        elif (action == 2):
+            player.velocity_x -= player.acceleration
+        elif (action == 3):
+            player.velocity_x += player.acceleration
+        elif(action == 4):
+            player.shoot()
+
 
     @staticmethod
     def _collision_judgment():
@@ -564,30 +621,42 @@ class EntityControler:
                     enemy.velocity_y += enemy.acceleration * acc_scale_y + 0.1
 
     @staticmethod
-    def _random_generate_enemy(d:int = 300):
+    def _random_generate_enemy(d:int = 100):
+
+
         EntityControler.g_random_timer_cnt += 1
-        if(EntityControler.g_random_timer_cnt<100):
+        if(EntityControler.g_random_timer_cnt < 100):
             return
         EntityControler.g_random_timer_cnt = 0
+
 
         for ply in EntityControler.g_playerGroup:
             for i in range(10):
                 x = ply.x - 500 + int(random.random() * 1000)
                 y = ply.y - 500 + int(random.random() * 1000)
+
+                if(abs(ply.x - x)<d or abs(ply.y - y )<d):
+                    continue
+
                 if(False == base.is_out_of_screen(x,y)):
                     EntityControler.add_new_enemy(x,y)
                     break
                 else:
                     continue
 
-
-
-
+    @staticmethod
+    def _remove_event_cb():
+        event.EventControler.remove_subscriber(event.NAME_BULLET_STOP, EntityControler.cb_bullet_stop)
+        event.EventControler.remove_subscriber(event.NAME_PLAYER_SHOOT, EntityControler.cb_player_shoot)
+        event.EventControler.remove_subscriber(event.NAME_ENVIRONMENT_COLLISION_B_E,EntityControler.cb_bullet_enemy_collision)
+        event.EventControler.add_subscriber(event.NAME_ENVIRONMENT_COLLISION_P_E,EntityControler.cb_player_enemy_collision)
     @staticmethod
     def _init_event_cb():
         event.EventControler.add_subscriber(event.NAME_BULLET_STOP,EntityControler.cb_bullet_stop)
         event.EventControler.add_subscriber(event.NAME_PLAYER_SHOOT, EntityControler.cb_player_shoot)
         event.EventControler.add_subscriber(event.NAME_ENVIRONMENT_COLLISION_B_E, EntityControler.cb_bullet_enemy_collision)
+        event.EventControler.add_subscriber(event.NAME_ENVIRONMENT_COLLISION_P_E , EntityControler.cb_player_enemy_collision)
+
     @staticmethod
     def cb_player_shoot(ev:event.Event):
         if(ev.event_name == event.NAME_PLAYER_SHOOT):
@@ -613,3 +682,14 @@ class EntityControler:
         if(ev.event_name == event.NAME_ENVIRONMENT_COLLISION_B_E):
             EntityControler._remove_entity(ev.bullet_id)
             EntityControler._remove_entity(ev.enemy_id)
+
+
+
+    @staticmethod
+    def cb_player_enemy_collision(ev: event.Event):
+        if (ev.event_name == event.NAME_ENVIRONMENT_COLLISION_P_E):
+            #gameover 暂不移除玩家
+            print("gameover!")
+            EntityControler.g_player_survive = False
+            EntityControler.reset()
+

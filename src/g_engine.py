@@ -23,15 +23,25 @@ class G_Engine:
     """
     @staticmethod
     def reset():
-        pass
-
+        """重置游戏状态"""
+        """
+        EntityControler.
+        self.enemies = []
+        self.bullets = []
+        self.score = 0
+        self.game_over = False
+        return self._get_state()
+        """
+        EntityControler.reset()
+        return G_Engine._get_state()
 
     @staticmethod
     def run():
         #pygame
         pygame.init()
-        screen = pygame.display.set_mode((G_Engine.s_screen_width, G_Engine.s_screen_height))
-        pygame.display.set_caption(G_Engine.s_caption)
+        if(base.GAME_SHOW_SCREEN == True):
+            screen = pygame.display.set_mode((G_Engine.s_screen_width, G_Engine.s_screen_height))
+            pygame.display.set_caption(G_Engine.s_caption)
         clock = pygame.time.Clock()
 
         font = pygame.font.Font(None, 36)
@@ -54,33 +64,84 @@ class G_Engine:
 
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
-            clock.tick(60)
-            #update
-            EventControler.update()
-            EntityControler.update()
 
 
+            G_Engine.step()
             #costom
             #EntityControler.set_player_pos(100,200)
             enemy = EntityControler.get_closest_enemy_around_player()
             if(enemy!=None):
                 pass
 
-
-
-            # 渲染
-            screen.fill(base.BLACK)
-            EntityControler.draw(screen)
-            # 显示分数
-            score_text = font.render(f"得分: {score}", True, base.WHITE)
-            screen.blit(score_text, (10, 10))
-            # 刷新屏幕
-            pygame.display.flip()
-
+            #screen show
+            if(base.GAME_SHOW_SCREEN == True):
+                G_Engine.render(screen)
+                clock.tick(60)
 
 
         pygame.quit()
         sys.exit()
+
+    @staticmethod
+    def render(screen):
+
+        if(screen == None):
+            return
+
+        # 渲染
+        screen.fill(base.BLACK)
+        EntityControler.draw(screen)
+        # 显示分数
+        #score_text = font.render(f"得分: {score}", True, base.WHITE)
+        #screen.blit(score_text, (10, 10))
+        # 刷新屏幕
+        pygame.display.flip()
+
+    @staticmethod
+    def _get_state()->list:
+
+        enemy_x = 0
+        enemy_y = 0
+        be = EntityControler.is_exist_bullets()
+        bullet_exist = 1 if be else 0
+
+        enemy_id = EntityControler.get_closest_enemy_around_player()
+        enemy = EntityControler._get_entity(enemy_id)
+        if(enemy != None):
+            enemy_x = enemy.x / base.GAME_SCREEN_WIDTH
+            enemy_y = enemy.y / base.GAME_SCREEN_HEIGHT
+
+        player = EntityControler.get_player()
+
+        player_x = player.x / base.GAME_SCREEN_WIDTH
+        player_y = player.y / base.GAME_SCREEN_HEIGHT
+
+        return [player_x,player_y,enemy_x,enemy_y,bullet_exist]
+
+    @staticmethod
+    def step(action=5):
+
+        # 执行动作: 0-上移, 1-下移, 2-左, 3-右 ,4-射击 (5 nothing)
+        EntityControler.set_player_action(action)
+
+        state = G_Engine._get_state()
+        # update
+        EventControler.update()
+        EntityControler.update()
+
+        if EntityControler.g_player_survive == False:
+            reward = -10
+        else:
+            reward = 0.1# 存活奖励
+
+        if (action == 4):
+            reward = -0.1
+
+
+        return state, reward, EntityControler.g_player_survive
+
+
+
 
 
 
@@ -91,16 +152,8 @@ class G_Engine:
     def init_event_cb():
         """在这里添加所有的事件订阅回调,也可以在其他模块动态添加订阅"""
         EventControler.add_subscriber(QUIT,G_Engine.cb_game_close)
-        print(QUIT)
     @staticmethod
     def cb_game_close(ev: event.Event)->None:
         print("close")
         if(ev.type == QUIT):
             G_Engine.s_running_status = base.GAME_STATUS_CLOSE
-
-
-
-
-
-G_Engine.run()
-

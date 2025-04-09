@@ -136,7 +136,17 @@ class EventControler:
             EventControler.s_game_pubsub_dict[event_name] = []
         EventControler.s_game_pubsub_dict[event_name].append(callback)
         if (EventControler.s_log_event_switch == True):
-            EventControler.s_event_logger.log(f"|subcribe| {event_name}:{callback}",'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+            EventControler.s_event_logger.log(f"|add subcriber| {event_name}:{callback}",'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+
+
+    @staticmethod
+    def remove_subscriber(event_name,callback):
+
+        if event_name in EventControler.s_game_pubsub_dict:
+            EventControler.s_game_pubsub_dict[event_name].remove(callback)
+
+        if (EventControler.s_log_event_switch == True):
+            EventControler.s_event_logger.log(f"|remove subcriber| {event_name}:{callback}",'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
 
     @staticmethod
     def print_subscriber():
@@ -146,7 +156,6 @@ class EventControler:
             if None != v:
                 for cb in v:
                     print(cb)
-
     @staticmethod
     def publish(event_name, *args, **kwargs):
         """发布事件,callback注意首参数为Event类"""
@@ -156,8 +165,14 @@ class EventControler:
                     callback(*args, **kwargs)
                 except Exception as e:
                     print(f"回调执行失败: {e}")
+                    if (EventControler.s_log_event_switch == True):
+                        EventControler.s_event_logger.log(
+                            f"|publish fail!!| event_name={event_name},callback={callback}", 'DEBUG',
+                            show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+
+
                 if (EventControler.s_log_event_switch == True):
-                    EventControler.s_event_logger.log(f"|publish| event_name={event_name} pub {callback}", 'DEBUG',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+                    EventControler.s_event_logger.log(f"|publish| event_name={event_name} pub {callback}", 'INFO',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
         else:
             if (EventControler.s_log_event_switch == True):
                 EventControler.s_event_logger.log(f"|publish| event_name={event_name}:callback func not in dict",'WARNING',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
@@ -218,7 +233,7 @@ class EventControler:
                     if(ev.event_name!=1):
                         msg = f"type={type_dict.get(ev.type,str(ev.type))},event_name={ev.event_name},player_id={ev.player_id},enemy_id={ev.enemy_id}"
                         log_info = f"[{EventControler.s_log_event_counter}]:{msg}"
-                        EventControler.s_event_logger.log(log_info,show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
+                        EventControler.s_event_logger.log(log_info,'INFO',show_console=base.GAME_LOG_EVENT_SHOWCONSOLE)
 
             except queue.Empty:
                 print("except")
@@ -291,19 +306,15 @@ NAME_ENEMY_ACT = 600512
 NAME_ENEMY_DEAD = 600513
 NAME_ENEMY_SHOOT = 600514
 
-
-#costom - event_name - bullet
-NAME_BULLET_STOP = 601024
-NAME_BULLET_DEAD = 601025
-
-
 #costom - event_name - environment - collision
 """环境：实体之间的碰撞事件。对应P、B、E 玩家、子弹、敌人"""
 NAME_ENVIRONMENT_COLLISION_P_E = 601024
 NAME_ENVIRONMENT_COLLISION_P_B = 601025
 NAME_ENVIRONMENT_COLLISION_B_E = 601026
 
-
+#costom - event_name - bullet
+NAME_BULLET_STOP = 602048
+NAME_BULLET_DEAD = 602049
 
 
 """pygame给出的类型================================================================================================="""
