@@ -3,6 +3,8 @@ import random
 import sys
 import base
 import event
+import math
+import threading
 
 class Player(pygame.sprite.Sprite):
 
@@ -244,7 +246,7 @@ class Bullet(pygame.sprite.Sprite):
 
 
 class Enemy(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self,x=0,y=0):
         super().__init__()
 
         self.image = pygame.Surface((base.ENEMY_BODYSIZE_X, base.ENEMY_BODYSIZE_Y))
@@ -259,8 +261,8 @@ class Enemy(pygame.sprite.Sprite):
         self.health = 1
         self.attack = 1
 
-        self.x = 0
-        self.y = 0
+        self.x = x
+        self.y = y
 
         # 运动参数
         self.velocity_x = 0
@@ -307,18 +309,17 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.x = self.x
         self.rect.y = self.y
 
-
-
+    def update(self):
+        self.calculate_pos()
 
     """=====================event call back ==========================="""
     def _init_event_cb(self):
         pass
-    def update(self):
-        pass
+
 
 class EntityControler:
     #group
-
+    g_random_timer_cnt = 0
 
     g_all_entityGroup = pygame.sprite.Group()
     g_playerGroup = pygame.sprite.Group()
@@ -328,8 +329,13 @@ class EntityControler:
     g_id_pool = set()
     @staticmethod
     def update():
+
         EntityControler._collision_judgment()
         EntityControler.g_all_entityGroup.update()
+
+        EntityControler._enemy_follow()
+
+        EntityControler._random_generate_enemy()
 
     @staticmethod
     def draw(screen):
@@ -359,7 +365,6 @@ class EntityControler:
                 continue
             else:
                 EntityControler.g_id_pool.add(i)
-                print(f"alloc id{i}")
                 return i
 
 
@@ -394,6 +399,44 @@ class EntityControler:
 
 
         return len(EntityControler.g_bulletGroup)
+
+    @staticmethod
+    def add_new_enemy(x:int=0,y:int=0)->int:
+        enemy = Enemy(x,y)
+
+        enemy_id = EntityControler._alloc_id(base.ENEMY_ID_BEGIN , base.ENTITY_ID_END)
+        enemy.id = enemy_id
+
+        EntityControler.g_id_pool.add(enemy_id)
+        EntityControler.g_all_entityGroup.add(enemy)
+        EntityControler.g_enemyGroup.add(enemy)
+
+        return len(EntityControler.g_enemyGroup)
+
+    @staticmethod
+    def get_closest_enemy_around_player(id:int =0) -> Enemy:
+        player = EntityControler._get_entity(id=id)
+
+        dis = max(base.GAME_SCREEN_WIDTH,base.GAME_SCREEN_HEIGHT)
+        ret = None
+
+        for et in EntityControler.g_enemyGroup:
+            enemy_x = et.x
+            enemy_y = et.y
+
+            cur_x_dis = abs(player.x - et.x)
+            cur_y_dis = abs(player.y - et.y)
+
+            cur_dis = int(math.sqrt(cur_x_dis**2 + cur_y_dis**2))
+            if(cur_dis<dis):
+                dis = cur_dis
+                ret = et
+
+        return ret
+
+
+
+
 
     @staticmethod
     def _remove_entity(id:int = 0)->bool:
@@ -485,22 +528,66 @@ class EntityControler:
 
         """player collisions judgement (with enemy)"""
         player_collisions = pygame.sprite.groupcollide(EntityControler.g_playerGroup,EntityControler.g_enemyGroup,False,False)
-        for player,enemies in player_collisions:
+        for player in player_collisions:
+            enemies = player_collisions.get(player)
             ev = event.Event(player_id=player.id,type=event.TYPE_ENVIRONMENT,event_name=event.NAME_ENVIRONMENT_COLLISION_P_E)
             event.EventControler.send_event(ev)
 
         """enemy collisions judgement (with bullet)"""
         enemy_collisions = pygame.sprite.groupcollide(EntityControler.g_bulletGroup,EntityControler.g_enemyGroup,False,False)
-        for bullet,enemies in enemy_collisions:
+        for bullet in enemy_collisions:
+            enemies = enemy_collisions.get(bullet)
             for enemy in enemies:
                 ev = event.Event(enemy_id=enemy.id,bullet_id=bullet.id,type=event.TYPE_ENVIRONMENT,event_name=event.NAME_ENVIRONMENT_COLLISION_B_E)
                 event.EventControler.send_event(ev)
+
+
+    @staticmethod
+    def _enemy_follow():
+
+        for ply in EntityControler.g_playerGroup:
+            x = ply.x
+            y = ply.y
+
+            for enemy in EntityControler.g_enemyGroup:
+
+                acc_scale_x = abs(enemy.x - x )/base.GAME_SCREEN_WIDTH
+                acc_scale_y = abs(enemy.y - y)/base.GAME_SCREEN_HEIGHT
+                if(enemy.x > x):
+                    enemy.velocity_x -= enemy.acceleration * acc_scale_x + 0.1
+                else:
+                    enemy.velocity_x += enemy.acceleration * acc_scale_x + 0.1
+
+                if (enemy.y > y):
+                    enemy.velocity_y -= enemy.acceleration * acc_scale_y + 0.1
+                else:
+                    enemy.velocity_y += enemy.acceleration * acc_scale_y + 0.1
+
+    @staticmethod
+    def _random_generate_enemy(d:int = 300):
+        EntityControler.g_random_timer_cnt += 1
+        if(EntityControler.g_random_timer_cnt<100):
+            return
+        EntityControler.g_random_timer_cnt = 0
+
+        for ply in EntityControler.g_playerGroup:
+            for i in range(10):
+                x = ply.x - 500 + int(random.random() * 1000)
+                y = ply.y - 500 + int(random.random() * 1000)
+                if(False == base.is_out_of_screen(x,y)):
+                    EntityControler.add_new_enemy(x,y)
+                    break
+                else:
+                    continue
+
+
+
 
     @staticmethod
     def _init_event_cb():
         event.EventControler.add_subscriber(event.NAME_BULLET_STOP,EntityControler.cb_bullet_stop)
         event.EventControler.add_subscriber(event.NAME_PLAYER_SHOOT, EntityControler.cb_player_shoot)
-
+        event.EventControler.add_subscriber(event.NAME_ENVIRONMENT_COLLISION_B_E, EntityControler.cb_bullet_enemy_collision)
     @staticmethod
     def cb_player_shoot(ev:event.Event):
         if(ev.event_name == event.NAME_PLAYER_SHOOT):
@@ -515,8 +602,14 @@ class EntityControler:
             blt_id = ev.bullet_id
 
             if(True == EntityControler._remove_entity(blt_id)):
-
+                """子弹销毁事件
                 ev = event.Event()
                 ev.set_event_type(event.TYPE_BULLET)
                 ev.set_event_name(event.NAME_BULLET_DEAD)
                 event.EventControler.send_event(ev)
+                """
+    @staticmethod
+    def cb_bullet_enemy_collision(ev:event.Event):
+        if(ev.event_name == event.NAME_ENVIRONMENT_COLLISION_B_E):
+            EntityControler._remove_entity(ev.bullet_id)
+            EntityControler._remove_entity(ev.enemy_id)

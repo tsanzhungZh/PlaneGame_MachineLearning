@@ -22,6 +22,11 @@ class G_Engine:
     ========================= ENGINE  ==============================
     """
     @staticmethod
+    def reset():
+        pass
+
+
+    @staticmethod
     def run():
         #pygame
         pygame.init()
@@ -44,6 +49,9 @@ class G_Engine:
         #EntityControler.modify_player_attribute(attribute={'velocity_x': 40, 'velocity_y': 15,'allow_exceed_max_speed': True})
         EntityControler.add_new_bullet(base.GAME_SCREEN_WIDTH/2 - base.BULLET_BODYSIZE_X/2,base.GAME_SCREEN_HEIGHT - 2 * base.PLAYER_BODYSIZE_Y,base.BULLET_INITIAL_SPEED)
 
+        EntityControler.add_new_enemy(100,200)
+        EntityControler.add_new_enemy(200,300)
+
         while(G_Engine.s_running_status == base.GAME_STAUTS_RUNNING):
 
             clock.tick(60)
@@ -54,12 +62,9 @@ class G_Engine:
 
             #costom
             #EntityControler.set_player_pos(100,200)
-
-
-
-
-
-
+            enemy = EntityControler.get_closest_enemy_around_player()
+            if(enemy!=None):
+                pass
 
 
 

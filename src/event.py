@@ -232,17 +232,14 @@ class EventControler:
                 EventControler.publish(QUIT,ev)
             elif(ev.event_name == NAME_USER_INPUT and EventControler.s_player_event_reception==True):
                 EventControler.publish(NAME_USER_INPUT,ev)
-            elif(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
+            if(ev.type==TYPE_ENEMY and EventControler.s_enemy_event_reception==True):
                 pass
-            elif (ev.type == TYPE_PLAYER and EventControler.s_player_event_reception == True):
+            if (ev.type == TYPE_PLAYER and EventControler.s_player_event_reception == True):
                 EventControler.publish(ev.event_name, ev)
-            elif(ev.type==TYPE_BULLET):
+            if(ev.type==TYPE_BULLET):
                 EventControler.publish(ev.event_name,ev)
-            elif (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
-                pass
-            else:
-                continue
-
+            if (ev.type == TYPE_ENVIRONMENT and EventControler.s_environment_event_reception == True):
+                EventControler.publish(ev.event_name, ev)
         return True
 
 
